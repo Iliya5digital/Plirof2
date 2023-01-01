@@ -1,0 +1,81 @@
+Royal Name Generator
+By Firelord Quality Games (c)2022
+
+Introduction
+Thank you for paying money to own this amazing piece of non-crap software! "Firelord Quality Games" will put your name in the fridge door together with the names of our other paying customers!
+This utility was created because I saw many men trying to earn money just to find a rich supermodel girlfriend. The get rich part is easy -just sent me 50$ and tell 5 of your friends to also send me 50$ and I will tell you the secret! The second part is more tricky -the supermodel girlfriend! 
+I did much research on how to attract a super pretty woman! The result of my research surprised me! Only one thing can make you go to bed a supermodel or with just your empty hands...
+The secret is the size! YES! The size of your name! Many scientists and historians came in the conclusion that the size of the name reflects the size of one mans money!
+You all think now that you somehow knew that! The explanation is simple: All serious men watch Spanish/Brazilian soap operas. In these TV shows most of the characters are filthy rich! Have you notised anythine else? The names are very long. Eg "Teresa García Ramírez de Arroyo" is one of the extremelly rich characters but "Juan Martínez Escudero Marta Villanueva Cortés" is even richer one!
+Of course you can't just make up a long name. You need help!
+This utility will help you generate a unique name that makes all women think that you're a royality!
+
+Instructions
+As with all Firelord Quality Games products,the code is very well written and the program itself is very easy to use:
+1.Open the tape case and take the tape that is inside.
+2.Put the tape in the tape player.
+3.If tape.player.tape.door is closed then open it. Go to step 2
+4.If tape.player is not connected to zx spectrum then connect it
+5.Press play on tape player
+6.Type LOAD "" and press enter in your ZX Spectrum.
+7.If game not loads then rewind tape goto 5
+8.If today is birthday of a relative or today is birthday of friend then print a happy birthday card : Give card
+9.Follow on-screen instructions
+
+Troubleshooting/FAQ
+Our organization is against shooting when there is trouble!
+Q:I don't know how to play that game!
+A:This is not a game it is a utility. It is normal that you can't play it!
+
+Q:I tried to use the name generated with <<insert supermodel name here>>. She told me a liar and left!
+A:When you claim that you own 3 Ferraris you don't go everywhere carrying a bike helmet!
+
+Q:Do you have any proof that this piece of software works?
+A:Yes, we have!
+
+Q:I liked your program very much! Will there be a sequel?
+A:Yes, we're planning to release the female version of this script. Kate, our beta tester, told us that she had succesfully used the female name generator and married a member of a known royal family. We can't reveal any more details about that at this point.
+
+Q: This utility seems that it is crap!
+A: No It is NOT. A piece of software can't be crap it the organization behind it has the name "Firelord Quality Games"!
+
+Q: If I don't like the software can I get a refund?
+A: Yes, but you must pay travel expenses so I can come and give you the money in person. Travel expencses include Business Vlass Air-Tickets, 3days stay at a 5 star hotel at a city near your home address.Also,you must cover taxi expences from the airport to the hotel and then to your home.
+
+
+10 GO SUB 9000: REM ---Royal Name Generator For CSSCGC 2022
+15 REM By Firelord Quality Programs Ltd - giatoula+spectrum
+20 INK colink: PAPER colpaper: BORDER colborder: CLS 
+100 PRINT INVERSE 1;"         Welcome to Royal"'"        Long Name Generator"
+110 PRINT "By Firelord Quality Programs Ltd"'';INVERSE 0
+120 GO SUB 8000: GO SUB 7000
+1000 STOP 
+7000 REM GENEAATE NAME
+7010 CLS : PRINT AT 10,1;"Your (new) Royal name is :"'
+7020 PRINT AT 14,0;""; INVERSE 1;
+7050 FOR K=1 TO d: PRINT INVERSE 1;n$(1+INT (RND*39));
+7060 NEXT K
+7500 RETURN 
+8000 REM MAIN SUBROUTINE -MENU
+8010 PRINT "Please enter the number of"'"digits (zero's) after the 1000"'"that represents your fortune!"'"(Default Currency is Canadian $)"
+8050 INPUT "Digits :";d
+8999 RETURN 
+9000 REM --variables
+9010 LET colpaper=5: LET colink=3: LET colborder=0
+9020 DIM n$(41,10)
+9030 FOR I=1 TO 39
+9040 READ n$(I): REM  PRINT I;")-";n$(I)
+9050 NEXT I
+9790 REM "Name list 40name "
+9800 DATA "Hose","Alfonso","Mario","Luigi"
+9810 DATA "Jim","Jack","Helen","Miguel"
+9820 DATA "Charles","Philip","Arthur","George"
+9830 DATA "Anne","Elizabeth","Alice","Louise"
+9840 DATA "Andrew","Albert","Christian","Edward"
+9850 DATA "Leopold","George","Duncan","Albert"
+9860 DATA "Beatrice","Mary","Victoria","Fedore"
+9870 DATA "Victoria","Adelaide","Mary","Louisa"
+9880 DATA "Helena","Augusta","Victoria","Mitsaras"
+9890 DATA "William","Arthur","Philip","Louis"
+9900 DATA "Antony","Richard","Louis","Edward"
+9990 RETURN 

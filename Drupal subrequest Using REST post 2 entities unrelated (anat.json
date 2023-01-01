@@ -1,0 +1,32 @@
+[
+
+  {
+    "requestId": "req-anathesi-REST post004.1",
+    "uri": "/entity/anathesi_mathimaton_tmima/?_format=hal_json",
+    "action": "create",
+    "body": "{\n    \"_links\": {\n        \"self\": {\n            \"href\": \"http://localhost/drupal8test/admin/structure/anathesi_mathimaton_tmima/1?_format=hal_json\"\n        },\n        \"type\": {\n            \"href\": \"http://localhost/drupal8test/rest/type/anathesi_mathimaton_tmima/anathesi_mathimaton_tmima\"\n        }\n       \n    },\n    \"langcode\": [\n        {\n            \"value\": \"en\"\n        }\n    ],\n    \"_embedded\": {\n\n                \"http://localhost/drupal8test/rest/relation/anathesi_mathimaton_tmima/anathesi_mathimaton_tmima/mathima_id\": [\n            {\n                \"uuid\": [\n                    {\n                        \"value\": \"5d69e4a6-a5a4-462a-941f-e7f1ae3c8b2d\"\n                    }\n                ]\n            }\n\n        ],\n        \"http://localhost/drupal8test/rest/relation/anathesi_mathimaton_tmima/anathesi_mathimaton_tmima/tmima_id\": [\n            {\n                \"uuid\": [\n                    {\n                        \"value\": \"8cdbcc32-9a0b-437b-9e83-bf65d34fd7b7\"\n                    }\n                ]\n            }\n        ]\n    },\n    \"status\": [\n        {\n            \"value\": true\n        }\n    ]\n\n}"
+,
+    "headers": {
+      "Accept": "application/hal+json",
+      "Content-Type": "application/hal+json",
+      "Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjY2MzZmOGIyMmY4MDAyYmJhNmYyZTQ1OGY0NTQyMmQ0NmMzYWUyNmFlNzZhNjFmYTY1YmQ1OTVkOWQzYmZhOTYyZjdhNmExYWM2ZTRkODUzIn0.eyJhdWQiOiI5N2I2MjY5Ni0zMTg2LTRhMDUtODQ1NS00NWFkYWQyZmY1ZDAiLCJqdGkiOiI2NjM2ZjhiMjJmODAwMmJiYTZmMmU0NThmNDU0MjJkNDZjM2FlMjZhZTc2YTYxZmE2NWJkNTk1ZDlkM2JmYTk2MmY3YTZhMWFjNmU0ZDg1MyIsImlhdCI6MTUxMDU2NjY3MCwibmJmIjoxNTEwNTY2NjcwLCJleHAiOjE1MTA1NzY2NzAsInN1YiI6IjM3MTIiLCJzY29wZXMiOlsiYXV0aGVudGljYXRlZCIsImRpYXhlaXJpc3Rpc19mcm9udGlzdGlyaW91Il19.sGfaV-TFcrzRzykRsc7rJoM15m5t2-dyVAKSCAMKnTwwb7qV9C-xyOCjwX8LMJmdJwTTibiTZvmFm9L0_hP2RpMkGv8Ko3JuZpD4cEjy3wny-y5_0ReY53-vI4rSVGYeWo8SOTG4L0CbdbBeTR38KKZ4cKr3O_IxNibNRfAHDKZIKLeNxxqP-mpr29GruWzmupqL_WQYKihlWPVaUbPpu2y_LPpzDHiXsWe7DLM9UNoL4g4UfUnQNtNkbJkvdId9DA0fhcJHXeDJjGJ-94AL1EF-6ojd1JCZxKO8RSuzdHZ_5Fkb2i7I0WE57BT69dWdIN-YF4bV34oNdbyaWjydYA",
+"X-CSRF-Token":"vvDfm-pFJEQbz9a5zSX4gOGkZBjvtYJxYltRa715Unk"
+ 
+} 
+   },
+    
+  {
+    "requestId": "req-anathesi-REST post004.2",
+    "uri": "/entity/anathesi_mathimaton_tmima/?_format=hal_json",
+    "action": "create",
+    "body": "{\n    \"_links\": {\n        \"self\": {\n            \"href\": \"http://localhost/drupal8test/admin/structure/anathesi_mathimaton_tmima/1?_format=hal_json\"\n        },\n        \"type\": {\n            \"href\": \"http://localhost/drupal8test/rest/type/anathesi_mathimaton_tmima/anathesi_mathimaton_tmima\"\n        }\n       \n    },\n    \"langcode\": [\n        {\n            \"value\": \"en\"\n        }\n    ],\n    \"_embedded\": {\n\n                \"http://localhost/drupal8test/rest/relation/anathesi_mathimaton_tmima/anathesi_mathimaton_tmima/mathima_id\": [\n            {\n                \"uuid\": [\n                    {\n                        \"value\": \"f4ec4671-0038-4026-9a6a-eee5ca9fcd91\"\n                    }\n                ]\n            }\n\n        ],\n        \"http://localhost/drupal8test/rest/relation/anathesi_mathimaton_tmima/anathesi_mathimaton_tmima/tmima_id\": [\n            {\n                \"uuid\": [\n                    {\n                        \"value\": \"8cdbcc32-9a0b-437b-9e83-bf65d34fd7b7\"\n                    }\n                ]\n            }\n        ]\n    },\n    \"status\": [\n        {\n            \"value\": true\n        }\n    ]\n\n}"
+,
+    "headers": {
+      "Accept": "application/hal+json",
+      "Content-Type": "application/hal+json",
+      "Authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjY2MzZmOGIyMmY4MDAyYmJhNmYyZTQ1OGY0NTQyMmQ0NmMzYWUyNmFlNzZhNjFmYTY1YmQ1OTVkOWQzYmZhOTYyZjdhNmExYWM2ZTRkODUzIn0.eyJhdWQiOiI5N2I2MjY5Ni0zMTg2LTRhMDUtODQ1NS00NWFkYWQyZmY1ZDAiLCJqdGkiOiI2NjM2ZjhiMjJmODAwMmJiYTZmMmU0NThmNDU0MjJkNDZjM2FlMjZhZTc2YTYxZmE2NWJkNTk1ZDlkM2JmYTk2MmY3YTZhMWFjNmU0ZDg1MyIsImlhdCI6MTUxMDU2NjY3MCwibmJmIjoxNTEwNTY2NjcwLCJleHAiOjE1MTA1NzY2NzAsInN1YiI6IjM3MTIiLCJzY29wZXMiOlsiYXV0aGVudGljYXRlZCIsImRpYXhlaXJpc3Rpc19mcm9udGlzdGlyaW91Il19.sGfaV-TFcrzRzykRsc7rJoM15m5t2-dyVAKSCAMKnTwwb7qV9C-xyOCjwX8LMJmdJwTTibiTZvmFm9L0_hP2RpMkGv8Ko3JuZpD4cEjy3wny-y5_0ReY53-vI4rSVGYeWo8SOTG4L0CbdbBeTR38KKZ4cKr3O_IxNibNRfAHDKZIKLeNxxqP-mpr29GruWzmupqL_WQYKihlWPVaUbPpu2y_LPpzDHiXsWe7DLM9UNoL4g4UfUnQNtNkbJkvdId9DA0fhcJHXeDJjGJ-94AL1EF-6ojd1JCZxKO8RSuzdHZ_5Fkb2i7I0WE57BT69dWdIN-YF4bV34oNdbyaWjydYA",
+"X-CSRF-Token":"vvDfm-pFJEQbz9a5zSX4gOGkZBjvtYJxYltRa715Unk"
+      
+    }    
+  }
+]

@@ -1,0 +1,3166 @@
+Notes :
+
+
+-Add a room as starting screen (pet shop with 2 boys outside . Go West
+-Check Image paths before compile
+-Add loading screen
+-Add story
+-Fix Ghost text
+-Add 3 or 10 Fruits (cherry,)
+-Add code (variables level , fruit1 )if holding level fruit give it to the ghost guard holding the door!
+ 
+ok-Make ghost movement every 2-3 moves 9can't give them anything) 
+ok-Ad images for center of mansion + 05-05 (scary Door)
+=======================
+Links memes etc :
+https://imgflip.com/meme/33917151/Sr-PacMan
+https://imgflip.com/memesearch?q=pacman
+
+==================
+
+Manual
+ 
+The Adventures of Real PacMan 2022
+By Firelord Quality Games - Quests Department
+ 
+Introduction
+------------
+Thank you for buying "The Adventures of Real PacMan 2022!". If you convince 300000 of your friends to buy this game I can buy a new Ferrari also, you will get a real tape with this game!
+
+ 
+The story so far
+----------------
+This game is about the real story of Baron Pacard Manford (also known as PacMan you might know the unsuccessful attempt to port his life in a video game a few decades ago)! 
+Baron Manford was a strange man! 
+His skin was pale -almost yellow- he had a huge mouth and a huge appetite! He could eat anything. He especially loved yellow candy!
+A less known aspect of his character was that the loved ghost stories. Since he was a little boy he liked exploring abandoned mansions which people thought they were haunted!
+His exploring skills made him famous and people paid him to hunt ghosts in old abandoned mansions!
+He even started his own company with two of his friends and named it "Ghostbusters inc". There was a movie that was based on this parts of his life. It became an instant blockbuster. The movie name was -as you can imagine- "The three amigos". One of the Ghostbusters three amigos was the famous French explorer "Ultimate Play da Gam"! 
+During his travels he learned that there was a big secret that noone knew and that secret would be revealed only to the bravest! 
+ 
+ 
+Game
+----
+In "The Adventures of Real PacMan 2022!" or "The Real adventures of Pacman 2022!" you take the role of the famous explorer Baron Pacard Manford. In a haunted mansion you found an ancient scroll which stated that there was a great secret message in a long lost dungeon (which is inside an very old mansion) that gives a clue about the quest about "Ultimate Secret of Life,the Universe and Everything!". Your research led you outside a Pet Shop in an abandoned village.
+You navigate inside the mansion using the usual commands W,E,N,S!
+
+ 
+Features
+--------
+-Detailed images of the dungeon!
+-Live the real adventure of PACard MANford through his eyes!
+-Fans of the 1980 unlicenced game known as Pacman will now learn thew true story!
+-Captured the fun of the different dungeons in a better way than the 1980 unlicenced game known as Pacman!
+-Noob friendly option implemented (hidden)!
+-You will (if you're good enough) learn what is the inside of the Ghost Lair in the middle of the mansion!
+ 
+Known Issues
+------------
+-I didn't write this game in the 80s!
+-All other issues have moved in the "features" section.
+-Unknown issue.
+ 
+Spoilers/Hints
+--------------
+-Just be yourself!
+-If you get lost it might help you if you play the unlicenced 1980 pacman. Making a map might help!
+-If you are brave enough to admit that youareanoob then the game will help/reward you!
+
+
+
+=======================================================
+<?xml version="1.0" encoding="utf-8"?>
+<xml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <project>
+    <projname>PacManTheRealAdventures</projname>
+    <welcome>Welcome to Pac Man The Real AdventureBy Firelord Quality Games (R)(C)</welcome>
+    <author>Firelord Quality Games</author>
+    <language>English</language>
+    <version>Version 1.0</version>
+    <output>adventure</output>
+    <preps>
+      <prep>in</prep>
+      <prep>on</prep>
+      <prep>at</prep>
+      <prep>under</prep>
+      <prep>into</prep>
+      <prep>inside</prep>
+      <prep>through</prep>
+      <prep>out</prep>
+      <prep>behind</prep>
+      <prep>off</prep>
+      <prep>up</prep>
+      <prep>with</prep>
+      <prep>to</prep>
+      <prep>off</prep>
+      <prep>north</prep>
+      <prep>south</prep>
+      <prep>east</prep>
+      <prep>west</prep>
+      <prep>northeast</prep>
+      <prep>southeast</prep>
+      <prep>northwest</prep>
+      <prep>southwest</prep>
+      <prep>up</prep>
+      <prep>down</prep>
+      <prep>about</prep>
+      <prep>over</prep>
+      <prep>across</prep>
+      <prep>for</prep>
+    </preps>
+    <verbs>
+      <builtinverbs>
+        <verb>n,go north,north</verb>
+        <verb>s,go south,south</verb>
+        <verb>e,go east,east</verb>
+        <verb>w,go west,west</verb>
+        <verb>ne,go northeast,northeast</verb>
+        <verb>se,go southeast,southeast</verb>
+        <verb>sw,go southwest,southwest</verb>
+        <verb>nw,go northwest,northwest</verb>
+        <verb>up,go up,u</verb>
+        <verb>down,go down,d</verb>
+        <verb>enter,go in,go inside,get in</verb>
+        <verb>out</verb>
+        <verb>go</verb>
+        <verb>get,take,grab,pick up</verb>
+        <verb>give</verb>
+        <verb>inventory,i</verb>
+        <verb>kill,attack</verb>
+        <verb>drop</verb>
+        <verb>light</verb>
+        <verb>look,l</verb>
+        <verb>examine,x,look at</verb>
+        <verb>look in</verb>
+        <verb>search</verb>
+        <verb>open</verb>
+        <verb>lock</verb>
+        <verb>unlock</verb>
+        <verb>close,shut</verb>
+        <verb>eat</verb>
+        <verb>drink</verb>
+        <verb>put,place</verb>
+        <verb>quit</verb>
+        <verb>smell,sniff</verb>
+        <verb>listen</verb>
+        <verb>wait</verb>
+        <verb>climb</verb>
+        <verb>yell,scream,shout</verb>
+        <verb>jump</verb>
+        <verb>talk to</verb>
+        <verb>turn on</verb>
+        <verb>turn off</verb>
+        <verb>wear,put on</verb>
+        <verb>save</verb>
+        <verb>restore</verb>
+        <verb>push,press</verb>
+        <verb>read</verb>
+        <verb>use</verb>
+        <verb>again</verb>
+      </builtinverbs>
+      <userverbs>
+        <verb>whereis</verb>
+        <verb>iamanoob</verb>
+      </userverbs>
+    </verbs>
+    <objects>
+      <object id="0" holder="0" name="Offscreen" printedname="Offscreen">
+        <description>Offscreen.  Move objects here to remove them from the world.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" transparent="0" openable="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in />
+          <out />
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="1" holder="96" name="player" printedname="Pac Man">
+        <description>You're a wonderful person. You shouldn't care what you look like.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" transparent="0" openable="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="me,self" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="2" holder="31" name="Cyan_Pill" printedname="Cyan Pill">
+        <description>You see a Cyan Pill!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="1" container="0" supporter="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="3" holder="67" name="ghostcyan" printedname="Cyan Ghost">
+        <description>You see a Cyan Ghost!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="4" holder="100" name="ghostorange" printedname="Orange Ghost">
+        <description>You see an Orange Ghost!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" transparent="0" openable="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="5" holder="80" name="ghostpink" printedname="Pink Ghost">
+        <description>You see a Pink Ghost!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" transparent="0" openable="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="6" holder="55" name="ghostred" printedname="Red Ghost">
+        <description>You see a Red   Ghost!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="6" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="7" holder="40" name="Orange_Pill" printedname="Orange Pill">
+        <description>You see an Oange Pill!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="1" container="0" supporter="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="8" holder="0" name="pacman2" printedname="Pacman2">
+        <description>You notice nothing unexpected.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="9" holder="99" name="Pink_Pill" printedname="Pink Pill">
+        <description>You see a Pink Pill!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="1" container="0" supporter="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="10" holder="91" name="Red_Pill" printedname="Red Pill">
+        <description>You see a Red Pill!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="1" container="0" supporter="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="11" holder="0" name="room01_01" printedname="Room01-01">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="21" e="12" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-E.scr</ImageId>
+      </object>
+      <object id="12" holder="0" name="room01_02" printedname="Room01-02">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="22" e="255" w="11" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-W.scr</ImageId>
+      </object>
+      <object id="13" holder="0" name="room01_03xx" printedname="Room01-03XX">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="14" holder="0" name="room01_04" printedname="Room01-04">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="24" e="15" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-E.scr</ImageId>
+      </object>
+      <object id="15" holder="0" name="room01_05" printedname="Room01-05">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="16" w="14" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="16" holder="0" name="room01_06" printedname="Room01-06">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="17" w="15" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="17" holder="0" name="room01_07" printedname="Room01-07">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="27" e="255" w="16" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-W.scr</ImageId>
+      </object>
+      <object id="18" holder="0" name="room01_08xx" printedname="Room01-08XX">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="19" holder="0" name="room01_09" printedname="Room01-09">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="29" e="20" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-E.scr</ImageId>
+      </object>
+      <object id="20" holder="0" name="room01_10" printedname="Room01-10">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="30" e="255" w="19" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-W.scr</ImageId>
+      </object>
+      <object id="21" holder="0" name="room02_01" printedname="Room02-01">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="11" s="31" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N.scr</ImageId>
+      </object>
+      <object id="22" holder="0" name="room02_02" printedname="Room02-02">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="12" s="32" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N.scr</ImageId>
+      </object>
+      <object id="23" holder="0" name="room02_03xx" printedname="Room02-03XX">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="24" holder="0" name="room02_04" printedname="Room02-04">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="14" s="34" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N.scr</ImageId>
+      </object>
+      <object id="25" holder="0" name="room02_05xx" printedname="Room02-05XX">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="26" holder="0" name="room02_06xx" printedname="Room02-06XX">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="27" holder="0" name="room02_07" printedname="Room02-07">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="17" s="37" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N.scr</ImageId>
+      </object>
+      <object id="28" holder="0" name="room02_08xx" printedname="Room02-08xx">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="29" holder="0" name="room02_09" printedname="Room02-09">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="19" s="39" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N.scr</ImageId>
+      </object>
+      <object id="30" holder="0" name="room02_10" printedname="Room02-10">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="20" s="40" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N.scr</ImageId>
+      </object>
+      <object id="31" holder="0" name="room03_01pill" printedname="Room03-01pill">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="21" s="41" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-WithPill.scr</ImageId>
+      </object>
+      <object id="32" holder="0" name="room03_02" printedname="Room03-02">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="22" s="255" e="33" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-N-E.scr</ImageId>
+      </object>
+      <object id="33" holder="0" name="room03_03" printedname="Room03-03">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="43" e="34" w="32" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-S.scr</ImageId>
+      </object>
+      <object id="34" holder="0" name="room03_04" printedname="Room03-04">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="24" s="255" e="35" w="33" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-Na.scr</ImageId>
+      </object>
+      <object id="35" holder="0" name="room03_05" printedname="Room03-05">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="45" e="255" w="34" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-W.scr</ImageId>
+      </object>
+      <object id="36" holder="0" name="room03_06" printedname="Room03-06">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="46" e="37" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-E.scr</ImageId>
+      </object>
+      <object id="37" holder="0" name="room03_07" printedname="Room03-07">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="27" s="255" e="38" w="36" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-Na.scr</ImageId>
+      </object>
+      <object id="38" holder="0" name="room03_08" printedname="Room03-08">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="48" e="39" w="37" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-S.scr</ImageId>
+      </object>
+      <object id="39" holder="0" name="room03_09" printedname="Room03-09">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="29" s="255" e="255" w="38" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-N-W.scr</ImageId>
+      </object>
+      <object id="40" holder="0" name="room03_10pill" printedname="Room03-10pill">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="30" s="50" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-WithPill.scr</ImageId>
+      </object>
+      <object id="41" holder="0" name="room04_01" printedname="Room04-01">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="31" s="255" e="42" w="48" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-Na.scr</ImageId>
+      </object>
+      <object id="42" holder="0" name="room04_02" printedname="Room04-02">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="52" e="43" w="41" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-S.scr</ImageId>
+      </object>
+      <object id="43" holder="0" name="room04_03" printedname="Room04-03">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="33" s="53" e="44" w="42" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-E-W.scr</ImageId>
+      </object>
+      <object id="44" holder="0" name="room04_04" printedname="Room04-04">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="54" e="45" w="43" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-S.scr</ImageId>
+      </object>
+      <object id="45" holder="0" name="room04_05" printedname="Room04-05">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="35" s="255" e="46" w="44" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-Na.scr</ImageId>
+      </object>
+      <object id="46" holder="0" name="room04_06" printedname="Room04-06">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="36" s="255" e="47" w="45" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-Na.scr</ImageId>
+      </object>
+      <object id="47" holder="0" name="room04_07" printedname="Room04-07">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="57" e="48" w="46" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-S.scr</ImageId>
+      </object>
+      <object id="48" holder="0" name="room04_08" printedname="Room04-08">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="38" s="58" e="49" w="47" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-E-W.scr</ImageId>
+      </object>
+      <object id="49" holder="0" name="room04_09" printedname="Room04-09">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="59" e="50" w="48" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-S.scr</ImageId>
+      </object>
+      <object id="50" holder="0" name="room04_10" printedname="Room04-10">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="40" s="255" e="41" w="49" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-Na.scr</ImageId>
+      </object>
+      <object id="51" holder="0" name="room05_01xx" printedname="Room05-01XX">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="52" holder="0" name="room05_02" printedname="Room05-02">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="42" s="62" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N.scr</ImageId>
+      </object>
+      <object id="53" holder="0" name="room05_03" printedname="Room05-03">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="43" s="63" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N.scr</ImageId>
+      </object>
+      <object id="54" holder="0" name="room05_04" printedname="Room05-04">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="44" s="64" e="55" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-E.scr</ImageId>
+      </object>
+      <object id="55" holder="0" name="room05_05red" printedname="Room05-05red">
+        <description>You are in a room with blue and red walls! You see yellow lights on the floor! There is a scary door to the south!</description>
+        <initialdescription />
+        <directions n="255" s="121" e="56" w="54" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>room5-5-E-W-Door</ImageId>
+      </object>
+      <object id="56" holder="0" name="room05_06" printedname="Room05-06">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="57" w="55" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-Door</ImageId>
+      </object>
+      <object id="57" holder="0" name="room05_07" printedname="Room05-07">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="47" s="67" e="255" w="56" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-W.scr</ImageId>
+      </object>
+      <object id="58" holder="0" name="room05_08" printedname="Room05-08">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="48" s="68" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N.scr</ImageId>
+      </object>
+      <object id="59" holder="0" name="room05_09" printedname="Room05-09">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="49" s="69" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N.scr</ImageId>
+      </object>
+      <object id="60" holder="0" name="room05_10xx" printedname="Room05-10XX">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="61" holder="0" name="room06_01" printedname="Room06-01">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="62" w="70" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="62" holder="0" name="room06_02" printedname="Room06-02">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="52" s="72" e="63" w="61" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-E-W.scr</ImageId>
+      </object>
+      <object id="63" holder="0" name="room06_03" printedname="Room06-03">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="53" s="73" e="64" w="62" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-E-W.scr</ImageId>
+      </object>
+      <object id="64" holder="0" name="room06_04" printedname="Room06-04">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="54" s="74" e="255" w="63" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-W.scr</ImageId>
+      </object>
+      <object id="65" holder="0" name="room06_05lair" printedname="Room06-05LAIR">
+        <description>You are in a red room with blue walls! There is a scary door to the north!</description>
+        <initialdescription />
+        <directions n="121" s="255" e="66" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-N-E_secretroom1</ImageId>
+      </object>
+      <object id="66" holder="0" name="room06_06lairend" printedname="Room06-06LAIREND">
+        <description>You are in a room with blue walls! You see an inscription on the wall: 'The quest shall begin on a hidden secret village with fierce blue warriors!' Also, you find a scroll that says : 'Remember : The sacred book will lead to a sacred artifact which will then lead to the Ultimate Scroll! Beware of the Last Guardian! Even Gods are scared of him!'</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="65" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-W_secretroom2</ImageId>
+      </object>
+      <object id="67" holder="0" name="room06_07cyan" printedname="Room06-07cyan">
+        <description>You are in a room with blue and cyan walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="57" s="76" e="68" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-E.scr</ImageId>
+      </object>
+      <object id="68" holder="0" name="room06_08" printedname="Room06-08">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="58" s="77" e="69" w="67" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-E-W.scr</ImageId>
+      </object>
+      <object id="69" holder="0" name="room06_09" printedname="Room06-09">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="59" s="78" e="70" w="68" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-E-W.scr</ImageId>
+      </object>
+      <object id="70" holder="0" name="room06_10" printedname="Room06-10">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="61" w="69" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="71" holder="0" name="room07_01xx" printedname="Room07-01XX">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="72" holder="0" name="room07_02" printedname="Room07-02">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="62" s="255" e="73" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-N-E.scr</ImageId>
+      </object>
+      <object id="73" holder="0" name="room07_03" printedname="Room07-03">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="63" s="83" e="255" w="72" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-W.scr</ImageId>
+      </object>
+      <object id="74" holder="0" name="room07_04" printedname="Room07-04">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="64" s="84" e="80" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-E.scr</ImageId>
+      </object>
+      <object id="75" holder="0" name="room07_06" printedname="Room07-06">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="76" w="80" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="76" holder="0" name="room07_07" printedname="Room07-07">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="67" s="87" e="255" w="75" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-W.scr</ImageId>
+      </object>
+      <object id="77" holder="0" name="room07_08" printedname="Room07-08">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="68" s="88" e="78" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-E.scr</ImageId>
+      </object>
+      <object id="78" holder="0" name="room07_09" printedname="Room07-09">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="69" s="255" e="255" w="77" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-N-W.scr</ImageId>
+      </object>
+      <object id="79" holder="0" name="room07_10xx" printedname="Room07-10XX">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="80" holder="0" name="Room0705pink" printedname="Room07-05pink">
+        <description>You are in a room with blue and pink walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="75" w="74" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="81" holder="0" name="room08_01" printedname="Room08-01">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="91" e="82" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-E.scr</ImageId>
+      </object>
+      <object id="82" holder="0" name="room08_02" printedname="Room08-02">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="83" w="81" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="83" holder="0" name="room08_03" printedname="Room08-03">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="73" s="255" e="84" w="82" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-Na.scr</ImageId>
+      </object>
+      <object id="84" holder="0" name="room08_04" printedname="Room08-04">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="74" s="94" e="85" w="83" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-E-W.scr</ImageId>
+      </object>
+      <object id="85" holder="0" name="room08_05" printedname="Room08-05">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="86" w="84" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="86" holder="0" name="room08_06" printedname="Room08-06">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="87" w="85" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="87" holder="0" name="room08_07" printedname="Room08-07">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="76" s="97" e="88" w="86" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-E-W.scr</ImageId>
+      </object>
+      <object id="88" holder="0" name="room08_08" printedname="Room08-08">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="77" s="255" e="89" w="87" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-Na.scr</ImageId>
+      </object>
+      <object id="89" holder="0" name="room08_09" printedname="Room08-09">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="90" w="88" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="90" holder="0" name="room08_10" printedname="Room08-10">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="99" e="255" w="89" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-W.scr</ImageId>
+      </object>
+      <object id="91" holder="0" name="room09_01pill" printedname="Room09-01pill">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="81" s="101" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-WithPill.scr</ImageId>
+      </object>
+      <object id="92" holder="0" name="room09_02" printedname="Room09-02">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="102" e="93" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-E.scr</ImageId>
+      </object>
+      <object id="93" holder="0" name="room09_03" printedname="Room09-03">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="103" e="94" w="92" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-S.scr</ImageId>
+      </object>
+      <object id="94" holder="0" name="room09_04" printedname="Room09-04">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="84" s="255" e="95" w="93" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-Na.scr</ImageId>
+      </object>
+      <object id="95" holder="0" name="room09_05" printedname="Room09-05">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="96" w="94" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="96" holder="0" name="room09_06start" printedname="Room09-06START">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="97" w="95" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="97" holder="0" name="room09_07" printedname="Room09-07">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="87" s="255" e="100" w="96" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-Na.scr</ImageId>
+      </object>
+      <object id="98" holder="0" name="room09_09" printedname="Room09-09">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="109" e="255" w="100" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-W.scr</ImageId>
+      </object>
+      <object id="99" holder="0" name="room09_10pill" printedname="Room09-10pill">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="90" s="110" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-WithPill.scr</ImageId>
+      </object>
+      <object id="100" holder="0" name="Room0908orange" printedname="Room09-08orange">
+        <description>You are in a room with blue and orange walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="108" e="98" w="97" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-S.scr</ImageId>
+      </object>
+      <object id="101" holder="0" name="room10_01" printedname="Room10-01">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="91" s="111" e="102" w="110" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-E-W.scr</ImageId>
+      </object>
+      <object id="102" holder="0" name="room10_02" printedname="Room10-02">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="92" s="255" e="255" w="101" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-N-W.scr</ImageId>
+      </object>
+      <object id="103" holder="0" name="room10_03" printedname="Room10-03">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="93" s="255" e="104" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-N-E.scr</ImageId>
+      </object>
+      <object id="104" holder="0" name="room10_04" printedname="Room10-04">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="105" w="103" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="105" holder="0" name="room10_05" printedname="Room10-05">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="115" e="106" w="104" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-S.scr</ImageId>
+      </object>
+      <object id="106" holder="0" name="room10_06" printedname="Room10-06">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="116" e="107" w="105" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W-S.scr</ImageId>
+      </object>
+      <object id="107" holder="0" name="room10_07" printedname="Room10-07">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="108" w="106" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="108" holder="0" name="room10_08" printedname="Room10-08">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="100" s="255" e="255" w="107" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-N-W.scr</ImageId>
+      </object>
+      <object id="109" holder="0" name="room10_09" printedname="Room10-09">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="98" s="255" e="110" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-N-E.scr</ImageId>
+      </object>
+      <object id="110" holder="0" name="room10_10" printedname="Room10-10">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="99" s="120" e="101" w="109" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-S-N-E-W.scr</ImageId>
+      </object>
+      <object id="111" holder="0" name="room11_01" printedname="Room11-01">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="101" s="255" e="112" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-N-E.scr</ImageId>
+      </object>
+      <object id="112" holder="0" name="room11_02" printedname="Room11-02">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="113" w="111" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="113" holder="0" name="room11_03" printedname="Room11-03">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="114" w="112" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="114" holder="0" name="room11_04" printedname="Room11-04">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="115" w="113" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="115" holder="0" name="room11_05" printedname="Room11-05">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="105" s="255" e="255" w="114" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-N-W.scr</ImageId>
+      </object>
+      <object id="116" holder="0" name="room11_06" printedname="Room11-06">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="106" s="255" e="117" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-N-E.scr</ImageId>
+      </object>
+      <object id="117" holder="0" name="room11_07" printedname="Room11-07">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="118" w="116" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="118" holder="0" name="room11_08" printedname="Room11-08">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="119" w="117" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="119" holder="0" name="room11_09" printedname="Room11-09">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="255" s="255" e="120" w="118" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-E-W.scr</ImageId>
+      </object>
+      <object id="120" holder="0" name="room11_10" printedname="Room11-10">
+        <description>You are in a room with blue walls! You see yellow lights on the floor!</description>
+        <initialdescription />
+        <directions n="110" s="255" e="255" w="119" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId>pacman-N-W.scr</ImageId>
+      </object>
+      <object id="121" holder="55" name="Scary_Door" printedname="Scary Door">
+        <description>You notice nothing unexpected.</description>
+        <initialdescription />
+        <directions n="55" s="65" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" transparent="0" openable="0" open="0" wearable="0" emittinglight="0" locked="1" lockable="1" beingworn="0" user1="0" door="1" user2="0" user3="0" user4="0" />
+        <synonyms />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+    </objects>
+    <checks>
+      <check verb="n" check="check_move" />
+      <check verb="s" check="check_move" />
+      <check verb="e" check="check_move" />
+      <check verb="w" check="check_move" />
+      <check verb="u" check="check_move" />
+      <check verb="d" check="check_move" />
+      <check verb="ne" check="check_move" />
+      <check verb="nw" check="check_move" />
+      <check verb="se" check="check_move" />
+      <check verb="sw" check="check_move" />
+      <check verb="close" check="check_dobj_supplied" />
+      <check verb="close" check="check_dobj_opnable" />
+      <check verb="close" check="check_dobj_open" />
+      <check verb="drink" check="check_dobj_supplied" />
+      <check verb="drink" check="check_have_dobj" />
+      <check verb="drop" check="check_dobj_supplied" />
+      <check verb="drop" check="check_have_dobj" />
+      <check verb="eat" check="check_dobj_supplied" />
+      <check verb="eat" check="check_have_dobj" />
+      <check verb="enter" check="check_dobj_supplied" />
+      <check verb="enter" check="check_see_dobj" />
+      <check verb="enter" check="check_move" />
+      <check verb="out" check="check_move" />
+      <check verb="examine" check="check_dobj_supplied" />
+      <check verb="examine" check="check_see_dobj" />
+      <check verb="get" check="check_dobj_supplied" />
+      <check verb="get" check="check_see_dobj" />
+      <check verb="get" check="check_dont_have_dobj" />
+      <check verb="get" check="check_dobj_portable" />
+      <check verb="get" check="check_weight" />
+      <check verb="kill" check="check_dobj_supplied" />
+      <check verb="kill" check="check_see_dobj" />
+      <check verb="light" check="check_dobj_supplied" />
+      <check verb="light" check="check_have_dobj" />
+      <check verb="light" check="check_see_dobj" />
+      <check verb="open" check="check_dobj_supplied" />
+      <check verb="open" check="check_see_dobj" />
+      <check verb="open" check="check_dobj_opnable" />
+      <check verb="open" check="check_dobj_unlocked" />
+      <check verb="put" check="check_dobj_supplied" />
+      <check verb="put" check="check_prep_supplied" />
+      <check verb="put" check="check_iobj_supplied" />
+      <check verb="put" check="check_not_self_or_child" />
+      <check verb="put" check="check_have_dobj" />
+      <check verb="put" check="check_see_iobj" />
+      <check verb="put" check="check_put" />
+      <check verb="talk to" check="check_dobj_supplied" />
+      <check verb="talk to" check="check_see_dobj" />
+      <check verb="turn on" check="check_dobj_supplied" />
+      <check verb="turn on" check="check_see_dobj" />
+      <check verb="lock" check="check_dobj_supplied" />
+      <check verb="lock" check="check_see_dobj" />
+      <check verb="lock" check="check_dobj_lockable" />
+      <check verb="unlock" check="check_dobj_supplied" />
+      <check verb="unlock" check="check_see_dobj" />
+      <check verb="unlock" check="check_dobj_lockable" />
+      <check verb="look in" check="check_dobj_supplied" />
+      <check verb="look in" check="check_see_dobj" />
+      <check verb="wear" check="check_see_dobj" />
+      <check verb="use" check="check_have_dobj" />
+      <check verb="wear" check="check_have_dobj" />
+      <check verb="wear" check="check_dobj_wearable" />
+      <check verb="give" check="check_dobj_supplied" />
+      <check verb="give" check="check_have_dobj" />
+      <check verb="give" check="check_iobj_supplied" />
+      <check verb="give" check="check_see_iobj" />
+      <check verb="push" check="check_dobj_supplied" />
+      <check verb="push" check="check_see_dobj" />
+      <check verb="read" check="check_dobj_supplied" />
+      <check verb="read" check="check_see_dobj" />
+    </checks>
+    <sentences>
+      <sentence verb="wear" do="*" prep="" io="" type="before" sub="get_portable" />
+      <sentence verb="take" do="player" prep="" io="" type="instead" sub="not_possible" />
+      <sentence verb="kill" do="player" prep="" io="" type="instead" sub="kill_self" />
+      <sentence verb="kill" do="*" prep="" io="" type="instead" sub="default_kill" />
+      <sentence verb="talk to" do="player" prep="" io="" type="instead" sub="talk_to_self" />
+      <sentence verb="talk to" do="*" prep="" io="" type="instead" sub="default_talk" />
+      <sentence verb="listen" do="" prep="" io="" type="instead" sub="listen" />
+      <sentence verb="wait" do="" prep="" io="" type="instead" sub="wait" />
+      <sentence verb="yell" do="" prep="" io="" type="instead" sub="yell" />
+      <sentence verb="jump" do="" prep="" io="" type="instead" sub="jump" />
+      <sentence verb="eat" do="*" prep="" io="" type="instead" sub="default_eat" />
+      <sentence verb="drink" do="*" prep="" io="" type="instead" sub="default_drink" />
+      <sentence verb="smell" do="*" prep="" io="" type="instead" sub="smell" />
+      <sentence verb="take" do="*" prep="" io="" type="after" sub="report_take" />
+      <sentence verb="drop" do="*" prep="" io="" type="after" sub="report_drop" />
+      <sentence verb="close" do="*" prep="" io="" type="after" sub="report_closed" />
+      <sentence verb="wear" do="*" prep="" io="" type="after" sub="report_wear" />
+      <sentence verb="unlock" do="Scary_Door" prep="" io="" type="instead" sub="door_unlock" />
+      <sentence verb="give" do="Cyan_Pill" prep="to" io="ghostcyan" type="instead" sub="give_cyan_pill" />
+      <sentence verb="give" do="Orange_Pill" prep="to" io="ghostorange" type="instead" sub="give_orange_pill" />
+      <sentence verb="give" do="Red_Pill" prep="to" io="ghostred" type="instead" sub="give_red_pill" />
+      <sentence verb="give" do="Pink_Pill" prep="to" io="ghostpink" type="instead" sub="give_pink_pill" />
+      <sentence verb="whereis" do="*" prep="" io="" type="instead" sub="debug_whereis_command" />
+      <sentence verb="talk to" do="ghostcyan" prep="" io="" type="instead" sub="talk_cyanghost" />
+      <sentence verb="talk to" do="ghostorange" prep="" io="" type="instead" sub="talk_orangeghost" />
+      <sentence verb="talk to" do="ghostpink" prep="" io="" type="instead" sub="talk_pinkghost" />
+      <sentence verb="talk to" do="ghostred" prep="" io="" type="instead" sub="talk_redghost" />
+      <sentence verb="iamanoob" do="" prep="" io="" type="instead" sub="noob_mode_activate" />
+    </sentences>
+    <routines>
+      <routine name="game_start">//put any startup code or messages here
+</routine>
+      <routine name="reset">//put reset code here
+</routine>
+      <routine name="not_possible">if (dobj == player) { println("Not physically possible.");  } </routine>
+      <routine name="get_portable">if (dobj.portable == 1) { if (dobj.holder != player) { println("(Taken)"); dobj.holder = player;}  } </routine>
+      <routine name="kill_self">println("If you are experiencing suicidal thoughts you should seek psychiatric help.");</routine>
+      <routine name="default_kill">println("Perhaps you should count to 3 and calm down.");</routine>
+      <routine name="kill_player">println("***YOU HAVE DIED***.");
+reset();
+</routine>
+      <routine name="talk_to_self">println("Talking to yourself is a sign of impending mental collapse.");</routine>
+      <routine name="default_talk">println("That fails to produce an exciting conversation.");</routine>
+      <routine name="listen">println("You hear nothing unexpected.");</routine>
+      <routine name="smell">println("You smell nothing unexpected.");</routine>
+      <routine name="wait">println("Time passes...");</routine>
+      <routine name="yell">println("AAAAAAAAAAAAARRRRGGGGGG!");</routine>
+      <routine name="jump">println("WHEEEEEE!");</routine>
+      <routine name="default_eat">println("That's not part of a healthy diet.");</routine>
+      <routine name="default_drink">println("You can't drink that.");</routine>
+      <routine name="quit_sub">println("[Note: you can't quit the test client]");</routine>
+      <routine name="report_take">println("Taken.");</routine>
+      <routine name="report_drop">println("Dropped.");</routine>
+      <routine name="report_closed">println("Closed.");</routine>
+      <routine name="report_wear">print("You put on the ");
+printname(dobj);
+println(".");</routine>
+      <routine name="door_unlock">//change name of door and code as needed.
+if (Scary_Door.locked == 1)
+{ 
+  println("Enter the CORP keycode:"); 
+  ask(); 
+    
+    if (answer == "1234")
+    {
+        println("The door slides open."); 
+        Scary_Door.open = 1; 
+        Scary_Door.locked = 0; 
+    } 
+    else 
+    { 
+  println("***BEEP***"); 
+        println("Invalid code."); 
+    } 
+} 
+else
+{ 
+    println("The door is already open."); 
+}
+</routine>
+      <routine name="TEST" />
+      <routine name="give_cyan_pill">
+//change the text as needed
+cls();
+println(" ");
+println("The Cyan Ghost says, 'Thank you! I feel much better. Did you know that my favourite player wore the shirt with the number 1?' ");
+
+Cyan_Pill.location = ghostcyan;
+//[object3].location = player;
+
+//set the variable indicating the thing has been given
+Cyan_Pill_Give=1;
+
+if (noob_mode == 1 )
+{
+println("Noobs should remember the numbers!!!");
+}
+</routine>
+      <routine name="give_orange_pill">
+//change the text as needed
+cls();
+println(" ");
+println("The Orange Ghost says, 'Thank you! When I was alive my lucky number was 2!'");
+
+Orange_Pill.location = ghostorange;
+//[object3].location = player;
+
+//set the variable indicating the thing has been given
+Orange_Pill_Give=1;
+
+if (noob_mode == 1 )
+{
+println("Noobs should remember the numbers!!!");
+}
+</routine>
+      <routine name="give_red_pill">
+//change the text as needed
+cls();
+println(" ");
+println("The Red Ghost says, 'Thank you! . Now I can go home and feed my 3 kids!'");
+
+Red_Pill.location = ghostred;
+//[object3].location = player;
+
+//set the variable indicating the thing has been given
+Red_Pill_Give=1;
+
+if (noob_mode == 1 )
+{
+println("Noobs should remember the numbers!!!");
+}
+</routine>
+      <routine name="give_pink_pill">
+//change the text as needed
+cls();
+println(" ");
+println("The Pink Ghost says, 'Thank you!. We are playing card tonight and we don't have a 4th player!' ");
+
+Pink_Pill.location = ghostpink;
+//[object3].location = player;
+
+//set the variable indicating the thing has been given
+Pink_Pill_Give=1;
+
+if (noob_mode == 1 )
+{
+println("Noobs should remember the numbers!!!");
+}
+</routine>
+      <routine name="debug_whereis_command">//now you can print where things are using 'whereis'
+if (noob_mode == 1 )
+{
+println("Noob report:");
+}
+if (noun1.location == player)
+{
+     println("You're carrying it!");
+}
+else
+{
+     print("The ");
+     print_name(noun1);
+     print(" is in ");
+     print_name(noun1.location);
+     println(".");
+}
+</routine>
+      <routine name="talk_cyanghost">
+//Change as needed
+//You coud add something like this...
+cls();
+println("The Cyan Ghost says, 'OMG! Im feeling blue. I need something to make me feel better!'");
+if (Cyan_Pill_Give == 1)
+{
+ 	println("'Thank you! I feel much better. Did you know that my favourite player wore the shirt with the number 1?'");
+}
+
+if (noob_mode == 1 )
+{
+println("You're a noob!");
+}</routine>
+      <routine name="talk_redghost">
+//Change as needed
+//You coud add something like this...
+cls();
+println("The Red Ghost says, 'HelloHowAreYou?Iamfine!Haveyouseenmypillsanywhere?'");
+if (Red_Pill_Give == 1)
+{
+ 	println("'Thank you! . Now I can go home and feed my 3 kids!'");
+}
+
+if (noob_mode == 1 )
+{
+println("Noob!Noob!Noob!");
+}</routine>
+      <routine name="talk_orangeghost">
+//Change as needed
+//You coud add something like this...
+cls();
+println("The Orange Ghost says, 'I need more of my vitamin pills. have you seen them?' ");
+if (Orange_Pill_Give == 1)
+{
+ 	println("'Thank you! When I was alive my lucky number was 2!'");
+}
+
+if (noob_mode == 1 )
+{
+println("Goodbye you Noob-pants!");
+}</routine>
+      <routine name="talk_pinkghost">
+//Change as needed
+//You coud add something like this...
+cls();
+println("The Pink Ghost says, 'I tried the blue ,the red, the magenta and all the spectrum color pills! only one pill was good! ' ");
+if (Pink_Pill_Give == 1)
+{
+ 	println("'Thank you!. We are playing card tonight and we don't have a 4th player!'");
+}
+
+if (noob_mode == 1 )
+{
+println("Bye you cry-baby noob!");
+}</routine>
+      <routine name="noob_mode_activate">//now you can print where things are using 'whereis'
+println(" ");
+println("Noob!");
+println("Noob!!");
+
+println("You're such a noob! ");
+println("You should be ashamed of yourself!!!!");
+println("Cry mode activated! Now the ghost stand still!!!");
+
+ghostcyan.location = player.location; 
+ghostorange.location = player.location; 
+ghostred.location = player.location; 
+ghostpink.location = player.location; 
+//Cyan_Pill.location = player.location; 
+//Red_Pill.location = player.location; 
+//Orange_Pill.location = player.location; 
+//Pink_Pill.location = player.location; 
+
+Cyan_Pill.location = player; 
+Red_Pill.location = player; 
+Orange_Pill.location = player; 
+Pink_Pill.location = player; 
+
+
+noob_mode=1; 
+
+println("Can a noob like you understand that you must LOOK here, check your INVENTORY ,do something and then go to the center of the mansion?");
+println("I hope you like 05x05 soccer!");</routine>
+    </routines>
+    <CheckFunctions />
+    <events>
+      <event name="victory_check">if (player.location == room06_06lairend &amp;&amp; gameOver == 0)
+{
+
+if (noob_mode == 1 )
+{
+println("At last! Two more moves and I would have to teleport you to this place and put huge Signs!!!");
+println("NOOOOOB!!!");
+}
+
+               println(" ");
+               println(" ");
+	//change text as needed by your game
+	println("You have reached the center of the mansion and you have discovered the secret message.");
+	println("***CONGRATULATIONS. YOU HAVE WON***");
+              println("You helped all the ghosts and now your mansion is not haunted anymore!");
+	gameOver = 1;
+}
+</event>
+      <event name="move_ghostcyan">npcMoveCount=0;
+tempRoom = ghostcyan.location;
+
+if (tempRoom.n &lt; 127)
+{
+	npcValidMoveArray[npcMoveCount]=tempRoom.n;
+	npcMoveCount++;		
+}
+if (tempRoom.s &lt; 127)
+{
+	npcValidMoveArray[npcMoveCount]=tempRoom.s;
+	npcMoveCount++;		
+}
+if (tempRoom.e &lt; 127)
+{
+	npcValidMoveArray[npcMoveCount]=tempRoom.e;
+	npcMoveCount++;		
+}
+if (tempRoom.w &lt; 127)
+{
+	npcValidMoveArray[npcMoveCount]=tempRoom.w;
+	npcMoveCount++;		
+} 
+
+//Roll dice to see if ghost moves
+if(rand(10)&lt;7 || noob_mode==1){npcMoveCount=0;}
+
+//pick a random element from the array
+if (npcMoveCount != 0)
+{
+	npcMoveCount = rand(npcMoveCount);
+	ghostcyan.location = npcValidMoveArray[npcMoveCount];
+}
+</event>
+      <event name="move_ghostorange">npcMoveCount=0;
+tempRoom = ghostorange.location;
+
+if (tempRoom.n &lt; 127)
+{
+	npcValidMoveArray[npcMoveCount]=tempRoom.n;
+	npcMoveCount++;		
+}
+if (tempRoom.s &lt; 127)
+{
+	npcValidMoveArray[npcMoveCount]=tempRoom.s;
+	npcMoveCount++;		
+}
+if (tempRoom.e &lt; 127)
+{
+	npcValidMoveArray[npcMoveCount]=tempRoom.e;
+	npcMoveCount++;		
+}
+if (tempRoom.w &lt; 127)
+{
+	npcValidMoveArray[npcMoveCount]=tempRoom.w;
+	npcMoveCount++;		
+} 
+
+//Roll dice to see if ghost moves
+if(rand(10)&lt;7  || noob_mode==1){npcMoveCount=0;}
+
+//pick a random element from the array
+if (npcMoveCount != 0)
+{
+	npcMoveCount = rand(npcMoveCount);
+	ghostorange.location = npcValidMoveArray[npcMoveCount];
+}
+</event>
+      <event name="move_ghostred">npcMoveCount=0;
+tempRoom = ghostred.location;
+
+if (tempRoom.n &lt; 127)
+{
+	npcValidMoveArray[npcMoveCount]=tempRoom.n;
+	npcMoveCount++;		
+}
+if (tempRoom.s &lt; 127)
+{
+	npcValidMoveArray[npcMoveCount]=tempRoom.s;
+	npcMoveCount++;		
+}
+if (tempRoom.e &lt; 127)
+{
+	npcValidMoveArray[npcMoveCount]=tempRoom.e;
+	npcMoveCount++;		
+}
+if (tempRoom.w &lt; 127)
+{
+	npcValidMoveArray[npcMoveCount]=tempRoom.w;
+	npcMoveCount++;		
+} 
+
+//Roll dice to see if ghost moves
+if(rand(10)&lt;7 || noob_mode==1){npcMoveCount=0;}
+
+//pick a random element from the array
+if (npcMoveCount != 0)
+{
+	npcMoveCount = rand(npcMoveCount);
+	ghostred.location = npcValidMoveArray[npcMoveCount];
+}
+</event>
+      <event name="move_ghostpink">npcMoveCount=0;
+tempRoom = ghostpink.location;
+
+if (tempRoom.n &lt; 127)
+{
+	npcValidMoveArray[npcMoveCount]=tempRoom.n;
+	npcMoveCount++;		
+}
+if (tempRoom.s &lt; 127)
+{
+	npcValidMoveArray[npcMoveCount]=tempRoom.s;
+	npcMoveCount++;		
+}
+if (tempRoom.e &lt; 127)
+{
+	npcValidMoveArray[npcMoveCount]=tempRoom.e;
+	npcMoveCount++;		
+}
+if (tempRoom.w &lt; 127)
+{
+	npcValidMoveArray[npcMoveCount]=tempRoom.w;
+	npcMoveCount++;		
+} 
+
+//Roll dice to see if ghost moves
+if(rand(10)&lt;7 || noob_mode==1){npcMoveCount=0;}
+
+//pick a random element from the array
+if (npcMoveCount != 0)
+{
+	npcMoveCount = rand(npcMoveCount);
+	ghostpink.location = npcValidMoveArray[npcMoveCount];
+}
+</event>
+    </events>
+    <variables>
+      <builtin>
+        <var name="dobj" addr="dobjId" value="0" />
+        <var name="iobj" addr="iobjId" value="0" />
+        <var name="score" addr="score" value="0" />
+        <var name="moves" addr="moves" value="0" />
+        <var name="health" addr="health" value="100" />
+        <var name="turnsWithoutLight" addr="turnsWithoutLight" value="0" />
+        <var name="gameOver" addr="gameOver" value="0" />
+        <var name="answer" addr="answer" value="0" />
+        <var name="maxWeight" addr="maxWeight" value="10" />
+        <var name="invWeight" addr="invWeight" value="0" />
+        <var name="couldSee" addr="couldSee" value="255" />
+        <var name="canSee" addr="canSee" value="1" />
+        <var name="iAnswer" addr="iAnswer" value="0" />
+        <var name="itId" addr="itId" value="255" />
+      </builtin>
+      <user>
+        <var name="Cyan_Pill_Give" addr="Lantern" value="0" />
+        <var name="Orange_Pill_Give" addr="Lantern" value="0" />
+        <var name="Red_Pill_Give" addr="Lantern" value="0" />
+        <var name="Pink_Pill_Give" addr="Lantern" value="0" />
+        <var name="npcMoveIndex" addr="Lantern" value="0" />
+        <var name="npcMoveCount" addr="Lantern" value="0" />
+        <var name="tempRoom" addr="Lantern" value="0" />
+        <var name="ghostcyan_PreviousRoom" addr="Lantern" value="0" />
+        <var name="noob_mode" addr="Lantern" value="0" />
+      </user>
+    </variables>
+    <Arrays>
+      <Array>
+        <ArrayName>npcValidMoveArray</ArrayName>
+        <Length>10</Length>
+        <Values>0</Values>
+        <Values>0</Values>
+        <Values>0</Values>
+        <Values>0</Values>
+        <Values>0</Values>
+        <Values>0</Values>
+        <Values>0</Values>
+        <Values>0</Values>
+        <Values>0</Values>
+        <Values>0</Values>
+      </Array>
+    </Arrays>
+    <walkthrough>e,e,e,s,e,n,get pink pill,n,w,w,w,w,w,w,w,w,w,s,get red pill,n,e,e,n,n,n,n,w,w,n,get cyan pill,s,e,e,e,e,e,e,e,e,e,n,get orange pill,s,w,w,w,s,w,w</walkthrough>
+    <test1>e,n,n,n,n,w,w</test1>
+    <test2>whereis cyan ghost,whereis red ghost,whereis orange ghost,whereis pink ghost</test2>
+    <BuildSettings>
+      <SpectrumBorder>0</SpectrumBorder>
+      <SpectrumPen>7</SpectrumPen>
+      <SpectrumPaper>0</SpectrumPaper>
+      <SpectrumFont />
+      <BrightPalette>true</BrightPalette>
+      <EnableGraphics>true</EnableGraphics>
+      <C64LoadScreen />
+      <CPMPostBuildScript />
+      <C64Border>0</C64Border>
+      <C64BG>2</C64BG>
+      <C64FG>3</C64FG>
+      <StatusLine>true</StatusLine>
+    </BuildSettings>
+    <StringDefs>
+      <Strings>
+        <StringDef>
+          <StringName>LeadingA</StringName>
+          <Z80name>leadinga</Z80name>
+          <SF02Name>leadingA</SF02Name>
+          <Value>A </Value>
+        </StringDef>
+        <StringDef>
+          <StringName>The</StringName>
+          <Z80name>the</Z80name>
+          <SF02Name>the</SF02Name>
+          <Value>The </Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Pardon</StringName>
+          <Z80name>pardonstr</Z80name>
+          <SF02Name>pardon</SF02Name>
+          <Value>Pardon?</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>DontUnderstand</StringName>
+          <Z80name>confused</Z80name>
+          <SF02Name>confused</SF02Name>
+          <Value>I don't follow you.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Done</StringName>
+          <Z80name>done</Z80name>
+          <SF02Name>done</SF02Name>
+          <Value>Done.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Is</StringName>
+          <Z80name>is</Z80name>
+          <SF02Name>is</SF02Name>
+          <Value> is...</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>InThe</StringName>
+          <Z80name>inthe </Z80name>
+          <SF02Name>inthe </SF02Name>
+          <Value>In the </Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Onthe</StringName>
+          <Z80name>onthe</Z80name>
+          <SF02Name>onthe</SF02Name>
+          <Value>On the </Value>
+        </StringDef>
+        <StringDef>
+          <StringName>NotOpenable</StringName>
+          <Z80name>notopenable</Z80name>
+          <SF02Name>notOpenable</SF02Name>
+          <Value>That's not openable.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>NotCloseable</StringName>
+          <Z80name>notcloseable</Z80name>
+          <SF02Name>notcloseable</SF02Name>
+          <Value>That's not closeable.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>AlreadyOpen</StringName>
+          <Z80name>alreadyopen</Z80name>
+          <SF02Name>alreadyOpen</SF02Name>
+          <Value>It's already open.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>AlreadyClosed</StringName>
+          <Z80name>alreadyclosed</Z80name>
+          <SF02Name>alreadyClosed</SF02Name>
+          <Value>It's already closed.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>AlreadyHave</StringName>
+          <Z80name>alreadyhave</Z80name>
+          <SF02Name>alreadyHave</SF02Name>
+          <Value>You already have that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>CantTake</StringName>
+          <Z80name>notportable</Z80name>
+          <SF02Name>notPortable</SF02Name>
+          <Value>You can't take that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>CantDo</StringName>
+          <Z80name>cantDoThat</Z80name>
+          <SF02Name>cantDoThat</SF02Name>
+          <Value>You can't do that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Carrying</StringName>
+          <Z80name>carrying</Z80name>
+          <SF02Name>carrying</SF02Name>
+          <Value>You are carrying...</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>TooHeavy</StringName>
+          <Z80name>tooheavystr</Z80name>
+          <SF02Name>tooHeavy</SF02Name>
+          <Value>You can't carry any more.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>HaveNothing</StringName>
+          <Z80name>noitems</Z80name>
+          <SF02Name>emptyhanded</SF02Name>
+          <Value>You are empty handed.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>CantSee</StringName>
+          <Z80name>pitchdark</Z80name>
+          <SF02Name>noLight</SF02Name>
+          <Value>It is pitch dark.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>DontHave</StringName>
+          <Z80name>donthave</Z80name>
+          <SF02Name>dontHave</SF02Name>
+          <Value>You don't have that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>DontSee</StringName>
+          <Z80name>dontseestr</Z80name>
+          <SF02Name>dontsee</SF02Name>
+          <Value>You don't see that here.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>CantSeeIn</StringName>
+          <Z80name>cantlook</Z80name>
+          <SF02Name>noPeek</SF02Name>
+          <Value>You can't see inside that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>FindNothing</StringName>
+          <Z80name>nothing</Z80name>
+          <SF02Name>itsEmpty</SF02Name>
+          <Value>You find nothing.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>CantOpen</StringName>
+          <Z80name>cantopen</Z80name>
+          <SF02Name>cantopen</SF02Name>
+          <Value>You can't open that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>CantEnter</StringName>
+          <Z80name>noenter</Z80name>
+          <SF02Name>noenter</SF02Name>
+          <Value>You can't enter that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>NotContainer</StringName>
+          <Z80name>notcontainer</Z80name>
+          <SF02Name>notContainer</SF02Name>
+          <Value>You can't put things in that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>NotSupporter</StringName>
+          <Z80name>notsupporter</Z80name>
+          <SF02Name>nosurface</SF02Name>
+          <Value>You find no suitable surface.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>CantWear</StringName>
+          <Z80name>notwearable</Z80name>
+          <SF02Name>notwearable</SF02Name>
+          <Value>You can't wear that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>AlreadyWearing</StringName>
+          <Z80name>alreadyworn</Z80name>
+          <SF02Name>alreadyWorn</SF02Name>
+          <Value>You're already wearing that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Opening</StringName>
+          <Z80name>openingThe</Z80name>
+          <SF02Name>openningThe</SF02Name>
+          <Value>Opening the </Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Reveals</StringName>
+          <Z80name>reveals</Z80name>
+          <SF02Name>reveals</SF02Name>
+          <Value> reveals...</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>ItsClosed</StringName>
+          <Z80name>closed</Z80name>
+          <SF02Name>itsClosed</SF02Name>
+          <Value>It's closed.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>IsClosed</StringName>
+          <Z80name>isclosed</Z80name>
+          <SF02Name>isclosed</SF02Name>
+          <Value> is closed.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>IsEmpty</StringName>
+          <Z80name>isempty</Z80name>
+          <SF02Name>isempty</SF02Name>
+          <Value> is empty.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>IsLocked</StringName>
+          <Z80name>isLocked</Z80name>
+          <SF02Name>isLocked</SF02Name>
+          <Value> is locked.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>ItsLocked</StringName>
+          <Z80name>itslocked</Z80name>
+          <SF02Name>itslocked</SF02Name>
+          <Value>It's locked.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>DoorClosed</StringName>
+          <Z80name>doorclosed</Z80name>
+          <SF02Name>doorclosed</SF02Name>
+          <Value>The door is closed.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>ThereIsA</StringName>
+          <Z80name>thereisa</Z80name>
+          <SF02Name>thereisa</SF02Name>
+          <Value>There is a </Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Here</StringName>
+          <Z80name>here</Z80name>
+          <SF02Name>here</SF02Name>
+          <Value> here.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Contains</StringName>
+          <Z80name>contains</Z80name>
+          <SF02Name>contains</SF02Name>
+          <Value> contains...</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>ItsNotLocked</StringName>
+          <Z80name>notlocked</Z80name>
+          <SF02Name>notlocked</SF02Name>
+          <Value>It's not locked.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>NotLockable</StringName>
+          <Z80name>notLockable</Z80name>
+          <SF02Name>notLockable</SF02Name>
+          <Value>It's not locked.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>AlreadyLocked</StringName>
+          <Z80name>alreadyLocked</Z80name>
+          <SF02Name>alreadyLocked</SF02Name>
+          <Value>It's already locked.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>AlreadyUnlocked</StringName>
+          <Z80name>alreadyUnlocked</Z80name>
+          <SF02Name>alreadyUnlocked</SF02Name>
+          <Value>It's already unlocked.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>NotPossible</StringName>
+          <Z80name>impossible</Z80name>
+          <SF02Name>impossible</SF02Name>
+          <Value>That's not possible.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>WhichWay</StringName>
+          <Z80name />
+          <SF02Name />
+          <Value>I don't know which way that is.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>BadPut</StringName>
+          <Z80name>badput</Z80name>
+          <SF02Name>badput</SF02Name>
+          <Value>That would violate the laws of physics.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>ProvidingLight</StringName>
+          <Z80name>providingLight</Z80name>
+          <SF02Name>providingLight</SF02Name>
+          <Value> (providing light)</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>BeingWorn</StringName>
+          <Z80name>beingworn</Z80name>
+          <SF02Name>beingWorn</SF02Name>
+          <Value> (being worn)</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>MissingNoun</StringName>
+          <Z80name>missingnoun</Z80name>
+          <SF02Name>missingDobj</SF02Name>
+          <Value>Missing noun.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>MissingPrep</StringName>
+          <Z80name>missingprep</Z80name>
+          <SF02Name>missingPrep</SF02Name>
+          <Value>Missing preposition.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>MissingNoun2</StringName>
+          <Z80name>missing_io</Z80name>
+          <SF02Name>missing_io</SF02Name>
+          <Value>Missing second noun.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>BadWord</StringName>
+          <Z80name>dontknowstr</Z80name>
+          <SF02Name>badword</SF02Name>
+          <Value>I don't know the word '</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>BadVerb</StringName>
+          <Z80name>badverbstr</Z80name>
+          <SF02Name>badverb</SF02Name>
+          <Value>I don't know the verb '</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Ambiguous</StringName>
+          <Z80name>ambigstr</Z80name>
+          <SF02Name>ambig</SF02Name>
+          <Value>I don't know which one you mean.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Bye</StringName>
+          <Z80name>bye</Z80name>
+          <SF02Name>bye</SF02Name>
+          <Value>Bye.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>LeadingAn</StringName>
+          <Z80name>leadingan</Z80name>
+          <SF02Name>leadingAn</SF02Name>
+          <Value>An </Value>
+        </StringDef>
+      </Strings>
+    </StringDefs>
+    <YouCantGoThatWay>You can't go that way.</YouCantGoThatWay>
+    <DefaultDescription>You notice nothing unexpected.</DefaultDescription>
+    <ImageResources>
+      <ImageId>pacman-E-W.scr</ImageId>
+      <SpeccyPath>Z:\CSSCGCpacman\tmpIMAGES\pacman-E-W.scr</SpeccyPath>
+      <Apple2Path />
+      <SpeccyHeight>128</SpeccyHeight>
+      <Apple2Height>192</Apple2Height>
+    </ImageResources>
+    <ImageResources>
+      <ImageId>pacman-N-E.scr</ImageId>
+      <SpeccyPath>Z:\CSSCGCpacman\tmpIMAGES\pacman-N-E.scr</SpeccyPath>
+      <Apple2Path />
+      <SpeccyHeight>128</SpeccyHeight>
+      <Apple2Height>192</Apple2Height>
+    </ImageResources>
+    <ImageResources>
+      <ImageId>pacman-S-N-E.scr</ImageId>
+      <SpeccyPath>Z:\CSSCGCpacman\tmpIMAGES\pacman-S-N-E.scr</SpeccyPath>
+      <Apple2Path />
+      <SpeccyHeight>128</SpeccyHeight>
+      <Apple2Height>192</Apple2Height>
+    </ImageResources>
+    <ImageResources>
+      <ImageId>pacman-S-N-W.scr</ImageId>
+      <SpeccyPath>Z:\CSSCGCpacman\tmpIMAGES\pacman-S-N-W.scr</SpeccyPath>
+      <Apple2Path />
+      <SpeccyHeight>128</SpeccyHeight>
+      <Apple2Height>192</Apple2Height>
+    </ImageResources>
+    <ImageResources>
+      <ImageId>pacman-E-W-Na.scr</ImageId>
+      <SpeccyPath>Z:\CSSCGCpacman\tmpIMAGES\pacman-E-W-Na.scr</SpeccyPath>
+      <Apple2Path />
+      <SpeccyHeight>128</SpeccyHeight>
+      <Apple2Height>192</Apple2Height>
+    </ImageResources>
+    <ImageResources>
+      <ImageId>pacman-N-W.scr</ImageId>
+      <SpeccyPath>Z:\CSSCGCpacman\tmpIMAGES\pacman-N-W.scr</SpeccyPath>
+      <Apple2Path />
+      <SpeccyHeight>128</SpeccyHeight>
+      <Apple2Height>192</Apple2Height>
+    </ImageResources>
+    <ImageResources>
+      <ImageId>pacman-S-N-E-W.scr</ImageId>
+      <SpeccyPath>Z:\CSSCGCpacman\tmpIMAGES\pacman-S-N-E-W.scr</SpeccyPath>
+      <Apple2Path />
+      <SpeccyHeight>128</SpeccyHeight>
+      <Apple2Height>192</Apple2Height>
+    </ImageResources>
+    <ImageResources>
+      <ImageId>pacman-S-N-WithPill.scr</ImageId>
+      <SpeccyPath>Z:\CSSCGCpacman\tmpIMAGES\pacman-S-N-WithPill.scr</SpeccyPath>
+      <Apple2Path />
+      <SpeccyHeight>128</SpeccyHeight>
+      <Apple2Height>192</Apple2Height>
+    </ImageResources>
+    <ImageResources>
+      <ImageId>pacman-E-W-S.scr</ImageId>
+      <SpeccyPath>Z:\CSSCGCpacman\tmpIMAGES\pacman-E-W-S.scr</SpeccyPath>
+      <Apple2Path />
+      <SpeccyHeight>128</SpeccyHeight>
+      <Apple2Height>192</Apple2Height>
+    </ImageResources>
+    <ImageResources>
+      <ImageId>pacman-S-E.scr</ImageId>
+      <SpeccyPath>Z:\CSSCGCpacman\tmpIMAGES\pacman-S-E.scr</SpeccyPath>
+      <Apple2Path />
+      <SpeccyHeight>128</SpeccyHeight>
+      <Apple2Height>192</Apple2Height>
+    </ImageResources>
+    <ImageResources>
+      <ImageId>pacman-S-N.scr</ImageId>
+      <SpeccyPath>Z:\CSSCGCpacman\tmpIMAGES\pacman-S-N.scr</SpeccyPath>
+      <Apple2Path />
+      <SpeccyHeight>128</SpeccyHeight>
+      <Apple2Height>192</Apple2Height>
+    </ImageResources>
+    <ImageResources>
+      <ImageId>pacman-S-W.scr</ImageId>
+      <SpeccyPath>Z:\CSSCGCpacman\tmpIMAGES\pacman-S-W.scr</SpeccyPath>
+      <Apple2Path />
+      <SpeccyHeight>128</SpeccyHeight>
+      <Apple2Height>192</Apple2Height>
+    </ImageResources>
+    <ImageResources>
+      <ImageId>pacman-N-E_secretroom1</ImageId>
+      <SpeccyPath>Z:\CSSCGCpacman\tmpIMAGES\pacman-N-E_secretroom1.scr</SpeccyPath>
+      <Apple2Path />
+      <SpeccyHeight>128</SpeccyHeight>
+      <Apple2Height>192</Apple2Height>
+    </ImageResources>
+    <ImageResources>
+      <ImageId>pacman-W_secretroom2</ImageId>
+      <SpeccyPath>Z:\CSSCGCpacman\tmpIMAGES\pacman-W_secretroom2.scr</SpeccyPath>
+      <Apple2Path />
+      <SpeccyHeight>128</SpeccyHeight>
+      <Apple2Height>192</Apple2Height>
+    </ImageResources>
+    <ImageResources>
+      <ImageId>pacman-E-W-Door</ImageId>
+      <SpeccyPath>Z:\CSSCGCpacman\tmpIMAGES\pacman-E-W-Door.scr</SpeccyPath>
+      <Apple2Path />
+      <SpeccyHeight>128</SpeccyHeight>
+      <Apple2Height>192</Apple2Height>
+    </ImageResources>
+    <ImageResources>
+      <ImageId>room5-5-E-W-Door</ImageId>
+      <SpeccyPath>Z:\CSSCGCpacman\tmpIMAGES\pacman-E-W-Door.scr</SpeccyPath>
+      <Apple2Path />
+      <SpeccyHeight>128</SpeccyHeight>
+      <Apple2Height>192</Apple2Height>
+    </ImageResources>
+  </project>
+</xml>

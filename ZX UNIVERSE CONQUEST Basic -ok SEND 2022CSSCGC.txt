@@ -1,0 +1,133 @@
+Manual
+
+ZX Universe Conquest 2022
+By Firelord Quality Games - Strategy Department
+
+Introduction
+------------
+Thank you for buying "ZX Universe Conquest!".
+This is an amazing strategy game that will give you many days of exciting strategy action!
+There was huge ammount of effort to create this game since this morning where it was conceived as an idea!
+
+The story so far
+----------------
+In "ZX Universe Conquest!" you are Ken Jake-un . A guy that started his life in the mines of Caprica DL234-5 planet. He was always in fighting mood because each day he had to fight with the Caprica Rats just to eat.
+As the year passed he joined the army and now is the General of one of the strongest armies in the universe. His amazing strategy skills made him one of the most famous persons in all galaxies.
+As all generals he has one goal : To win everyone and become the Supreme Commander!!!
+
+
+Game
+----
+In "ZX Universe Conquest!" you start with an army of 500000 spaceships. You must conquer all the planet in the known universe to become the supreme commander.
+Each planet has it's own strengths and weaknesses and you must choose the correct strategy to conquer it! If you loose it will cost you in speceships.If you run out of spaceships then... GAME OVER...
+
+ 
+Features
+--------
+-10000+ different and unique planets!
+-More than 2 strategy options to conquer each planet!
+-You can be aggresive or a diplomat by offering bribes
+-Each planet has it's own characteristics. Attack, Defence and Sexiness!
+
+Known Issues
+------------
+-I didn't write this game in the 80s!
+-All other issues have moved in the "features" section.
+-Unknown issue.
+
+Spoilers/Hints
+--------------
+-Just be yourself!
+
+
+
+
+
+--------------------------------
+10 REM LOADER
+100 PAPER 0 : INK 2 :BORDER 0: CLS
+9000 PRINT AT 5,8;FLASH1 ;"UNIVERSE CONQUEST";FLASH 0
+9010 PRINT '"THE STRATEGY GAME OF THE CENTURY"
+9011 PRINT
+9020 PRINT INK 1;"CAN YOU BECOME THE "
+9030 PRINT "         ";INK 5;"SUPREME COMMANDER"'"           OF THE UNIVERSE?"
+9220 PRINT "FEATURING MORE LEVELS THAN "'"SENTINEL!!!!";INK 2
+9500 PRINT ''"AN EXCITING & THRILLING GAME BY"
+9900 PRINT FLASH 1;"- - -FIRELORD QUALITY GAMES- - -"
+9999 LOAD ""
+--------------------
+10 REM START
+20 GOSUB 8000: REM INIT VARIABLES
+30 GOSUB subintro: REM INTRO
+40 PAPER colpaper:INK colink: BORDER colborder
+
+100 GOSUB subnewplanet : REM -
+120 PRINT '"AVAILABLE STRATEGIES ARE:"
+130 PRINT "1.DIRECT ATTACK": PRINT "2.SURROUND PLANET ATTACK":PRINT "3.BRIBE GOVERMENT TO SURRENDER"
+500 REM CHECK WIn OR LOOSE
+510 LET WIN=1+planetid-attoptions*INT(planetid/attoptions)
+511 IF DEBUG THEN PRINT "DEBUG win=";WIN; ",planet=";planetid
+530 INPUT "PLEASE SELECT CONQUEST STRATEGY:"; A
+540 IF A>attoptions OR A<0 THEN PRINT AT 12,1;INK 2;"PLEASE ENTER 1-";attoptions;INK colink :GOTO 140
+560 IF A=WIN THEN GOSUB subwon
+580 IF A<>WIN THEN GOSUB sublost
+600 GOTO 100
+
+2999 STOP
+3199 REM ---NEW PLANET INIT STATUS----
+3200 CLS
+3205 LET planetid=planetid+1
+3210 PRINT AT 1,0;"CONQUERED PLANETS: ";SCORE
+3220 PRINT AT 2,0;"ARMY :";ARMY
+3250 PRINT "You are approaching Planet ";
+3275 PRINT AT 4,10 ;INK 1;"T-";INT(planetid*(RND*100));"-";INT(RND*990);INK colink
+3290 PRINT "of the planetary system :"
+3300 PRINT AT 6,10;INK 1;"GL-";INT(planetid*10);"-";INT(RND*100);INK colink
+3340 PRINT "STATS:";AT 7,6;INK 5;"ATT:";INT (RND*10);",DEF:";INT (RND*10);",SEX:";INT(RND*10)
+3400 RETURN
+
+4000 REM ----WON----
+4020 LET WONFIGHT=0
+4030 LET SCORE=SCORE+1
+4050 PRINT FLASH 1;"WON";FLASH 0
+4450 IF SCORE>=ENDSCORE THEN GOSUB subgamewon
+4490 PAUSE 0
+4499 RETURN
+
+4500 REM ----LOST----
+4520 LET ARMY=ARMY-INT(RND*10000)
+4550 PRINT FLASH 1;"LOST";FLASH 0
+4600 IF ARMY<1 THEN GOSUB subgameover
+4990 PAUSE 0
+4999 RETURN
+
+5500 REM ----GAME OVER----
+5510 CLS: BORDER 1: PAPER 1 :INK 0
+5530 PRINT FLASH 1;"GAME OVER";FLASH 0
+5550 PRINT " YOU FAILED!!!!!!!!!!"
+5990 PAUSE 0: GOTO 10
+5999 RETURN
+
+6500 REM ----GAME WON TOTAL UNIVERSE RULER!!!----
+6510 CLS: BORDER 1: PAPER 1 :INK 0
+6530 PRINT FLASH 1;"CONGRATULATION!!!";FLASH 0
+6550 PRINT " YOU ARE THE SUPREME RULER"'"OF THE UNIVERSE !!!!"
+6990 PAUSE 0:PRINT "PRESS ANY KEY":PAUSE 0: GOTO 10
+6999 RETURN
+
+7999 REM ----Variable init----
+8000 LET planetid=1: LET WONFIGHT=0
+8010 LET SCORE=0: LET ARMY=500000 : LET attoptions=3
+8020 LET ENDSCORE=10010
+8030 LET colpaper=0: LET colink=6: LET colborder=0
+8040 LET sublost=4500 : LET subwon=4000
+8045 LET subgameover=5500 : LET subgamewon=6500
+8050 LET subintro=9000 : LET subnewplanet=3200
+8060 LET DEBUG=0
+
+8499 RETURN
+8999 REM ----INTRO----
+9000 PRINT FLASH1 ;"UNIVERSE CONQUEST";FLASH 0
+9010 PRINT "THE STRATEGY GAME OF THE CENTURY"
+9020 PRINT "FEATURING MORE LEVELS THAN SENTINEL!!!!"
+9499 RETURN

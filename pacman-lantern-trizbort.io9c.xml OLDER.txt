@@ -1,0 +1,1940 @@
+OLDER Version
+New is here : https://pastebin.com/Wkcx80pE 
+
+CHANGE THIS for initial room in lantern :
+ <object id="87" holder="0" name="room01_01" printedname="Room01-01">
+ <object id="82" holder="0" name="room09_01pill" printedname="Room09-01pill">
+ <object id="117" holder="2" name="pacman" printedname="Pacman">
+
+-----------------------------------------------------------------
+
+<?xml version="1.0" encoding="utf-8"?>
+<xml xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <project>
+    <projname />
+    <welcome />
+    <author>To do: insert welcome message.</author>
+    <language>English</language>
+    <version>Version 1.0</version>
+    <output>adventure</output>
+    <preps>
+      <prep>in</prep>
+      <prep>on</prep>
+      <prep>at</prep>
+      <prep>under</prep>
+      <prep>into</prep>
+      <prep>inside</prep>
+      <prep>through</prep>
+      <prep>out</prep>
+      <prep>behind</prep>
+      <prep>off</prep>
+      <prep>up</prep>
+      <prep>with</prep>
+      <prep>to</prep>
+      <prep>off</prep>
+      <prep>north</prep>
+      <prep>south</prep>
+      <prep>east</prep>
+      <prep>west</prep>
+      <prep>northeast</prep>
+      <prep>southeast</prep>
+      <prep>northwest</prep>
+      <prep>southwest</prep>
+      <prep>up</prep>
+      <prep>down</prep>
+      <prep>about</prep>
+      <prep>over</prep>
+      <prep>across</prep>
+      <prep>for</prep>
+    </preps>
+    <verbs>
+      <builtinverbs>
+        <verb>n,go north,north</verb>
+        <verb>s,go south,south</verb>
+        <verb>e,go east,east</verb>
+        <verb>w,go west,west</verb>
+        <verb>ne,go northeast,northeast</verb>
+        <verb>se,go southeast,southeast</verb>
+        <verb>sw,go southwest,southwest</verb>
+        <verb>nw,go northwest,northwest</verb>
+        <verb>up,go up,u</verb>
+        <verb>down,go down,d</verb>
+        <verb>enter,go in,go inside,get in</verb>
+        <verb>out</verb>
+        <verb>go</verb>
+        <verb>get,take,grab,pick up</verb>
+        <verb>give</verb>
+        <verb>inventory,i</verb>
+        <verb>kill,attack</verb>
+        <verb>drop</verb>
+        <verb>light</verb>
+        <verb>look,l</verb>
+        <verb>examine,x,look at</verb>
+        <verb>look in</verb>
+        <verb>search</verb>
+        <verb>open</verb>
+        <verb>lock</verb>
+        <verb>unlock</verb>
+        <verb>close,shut</verb>
+        <verb>eat</verb>
+        <verb>drink</verb>
+        <verb>put,place</verb>
+        <verb>quit</verb>
+        <verb>smell,sniff</verb>
+        <verb>listen</verb>
+        <verb>wait</verb>
+        <verb>climb</verb>
+        <verb>yell,scream,shout</verb>
+        <verb>jump</verb>
+        <verb>talk to</verb>
+        <verb>turn on</verb>
+        <verb>turn off</verb>
+        <verb>wear,put on</verb>
+        <verb>save</verb>
+        <verb>restore</verb>
+        <verb>push,press</verb>
+        <verb>read</verb>
+        <verb>use</verb>
+        <verb>again</verb>
+      </builtinverbs>
+      <userverbs />
+    </verbs>
+    <objects>
+      <object id="0" holder="0" name="Offscreen" printedname="Offscreen">
+        <description>Offscreen.  Move objects here to remove them from the world.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" transparent="0" openable="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms />
+        <nogo>
+          <s />
+          <w />
+          <ne />
+          <nw />
+          <e />
+          <se />
+          <sw />
+          <n />
+          <up />
+          <down />
+          <in />
+          <out />
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="1" holder="2" name="player" printedname="player">
+        <description>You're a wonderful person. You shouldn't care what you look like.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" transparent="0" openable="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="me,self" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="2" holder="0" name="room01_01" printedname="Room01-01">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="12" e="3" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="3" holder="0" name="room01_02" printedname="Room01-02">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="13" e="255" w="2" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="4" holder="0" name="room01_03xx" printedname="Room01-03XX">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="5" holder="0" name="room01_04" printedname="Room01-04">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="15" e="6" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="6" holder="0" name="room01_05" printedname="Room01-05">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="7" w="5" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="7" holder="0" name="room01_06" printedname="Room01-06">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="8" w="6" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="8" holder="0" name="room01_07" printedname="Room01-07">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="18" e="255" w="7" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="9" holder="0" name="room01_08xx" printedname="Room01-08XX">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="10" holder="0" name="room01_09" printedname="Room01-09">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="20" e="11" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="11" holder="0" name="room01_10" printedname="Room01-10">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="21" e="255" w="10" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="12" holder="0" name="room02_01" printedname="Room02-01">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="2" s="22" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="13" holder="0" name="room02_02" printedname="Room02-02">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="3" s="23" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="14" holder="0" name="room02_03xx" printedname="Room02-03XX">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="15" holder="0" name="room02_04" printedname="Room02-04">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="5" s="25" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="16" holder="0" name="room02_05xx" printedname="Room02-05XX">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="17" holder="0" name="room02_06xx" printedname="Room02-06XX">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="18" holder="0" name="room02_07" printedname="Room02-07">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="8" s="28" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="19" holder="0" name="room02_08xx" printedname="Room02-08xx">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="20" holder="0" name="room02_09" printedname="Room02-09">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="10" s="30" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="21" holder="0" name="room02_10" printedname="Room02-10">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="11" s="31" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="22" holder="0" name="room03_01pill" printedname="Room03-01pill">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="12" s="32" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <s />
+          <n />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="23" holder="0" name="room03_02" printedname="Room03-02">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="13" s="255" e="24" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="24" holder="0" name="room03_03" printedname="Room03-03">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="34" e="25" w="23" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="25" holder="0" name="room03_04" printedname="Room03-04">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="15" s="255" e="26" w="24" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="26" holder="0" name="room03_05" printedname="Room03-05">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="36" e="255" w="25" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="27" holder="0" name="room03_06" printedname="Room03-06">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="37" e="28" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="28" holder="0" name="room03_07" printedname="Room03-07">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="18" s="255" e="29" w="27" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="29" holder="0" name="room03_08" printedname="Room03-08">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="39" e="30" w="28" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="30" holder="0" name="room03_09" printedname="Room03-09">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="20" s="255" e="255" w="29" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="31" holder="0" name="room03_10pill" printedname="Room03-10pill">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="21" s="41" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="32" holder="0" name="room04_01" printedname="Room04-01">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="22" s="255" e="33" w="39" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="33" holder="0" name="room04_02" printedname="Room04-02">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="43" e="34" w="32" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="34" holder="0" name="room04_03" printedname="Room04-03">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="24" s="44" e="35" w="33" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="35" holder="0" name="room04_04" printedname="Room04-04">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="45" e="36" w="34" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="36" holder="0" name="room04_05" printedname="Room04-05">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="26" s="255" e="37" w="35" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="37" holder="0" name="room04_06" printedname="Room04-06">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="27" s="255" e="38" w="36" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="38" holder="0" name="room04_07" printedname="Room04-07">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="48" e="39" w="37" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="39" holder="0" name="room04_08" printedname="Room04-08">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="29" s="49" e="32" w="38" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="40" holder="0" name="room04_09" printedname="Room04-09">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="50" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="41" holder="0" name="room04_10" printedname="Room04-10">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="31" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="42" holder="0" name="room05_01xx" printedname="Room05-01XX">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="43" holder="0" name="room05_02" printedname="Room05-02">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="33" s="53" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="44" holder="0" name="room05_03" printedname="Room05-03">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="34" s="54" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="45" holder="0" name="room05_04" printedname="Room05-04">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="35" s="55" e="46" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="46" holder="0" name="room05_05ghostred" printedname="Room05-05GhostRED">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="47" w="45" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="47" holder="0" name="room05_06" printedname="Room05-06">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="57" e="48" w="46" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="48" holder="0" name="room05_07" printedname="Room05-07">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="38" s="58" e="255" w="47" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="49" holder="0" name="room05_08" printedname="Room05-08">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="39" s="59" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="50" holder="0" name="room05_09" printedname="Room05-09">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="40" s="60" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="51" holder="0" name="room05_10xx" printedname="Room05-10XX">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="52" holder="0" name="room06_01" printedname="Room06-01">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="53" w="61" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="53" holder="0" name="room06_02" printedname="Room06-02">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="43" s="63" e="54" w="52" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="54" holder="0" name="room06_03" printedname="Room06-03">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="44" s="64" e="55" w="53" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="55" holder="0" name="room06_04" printedname="Room06-04">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="45" s="65" e="255" w="54" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="56" holder="0" name="room06_05lair" printedname="Room06-05LAIR">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="57" holder="0" name="room06_06lair" printedname="Room06-06LAIR">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="47" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="58" holder="0" name="room06_07" printedname="Room06-07">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="48" s="68" e="59" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="59" holder="0" name="room06_08" printedname="Room06-08">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="49" s="69" e="60" w="58" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="60" holder="0" name="room06_09" printedname="Room06-09">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="50" s="70" e="61" w="59" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="61" holder="0" name="room06_10" printedname="Room06-10">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="52" w="60" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="62" holder="0" name="room07_01xx" printedname="Room07-01XX">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="63" holder="0" name="room07_02" printedname="Room07-02">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="53" s="255" e="64" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="64" holder="0" name="room07_03" printedname="Room07-03">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="54" s="74" e="255" w="63" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="65" holder="0" name="room07_04" printedname="Room07-04">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="55" s="75" e="66" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="66" holder="0" name="room07_05" printedname="Room07-05">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="67" w="65" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="67" holder="0" name="room07_06" printedname="Room07-06">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="68" w="66" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="68" holder="0" name="room07_07" printedname="Room07-07">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="58" s="78" e="255" w="67" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="69" holder="0" name="room07_08" printedname="Room07-08">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="59" s="79" e="70" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="70" holder="0" name="room07_09" printedname="Room07-09">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="60" s="255" e="255" w="69" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="71" holder="0" name="room07_10xx" printedname="Room07-10XX">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="72" holder="0" name="room08_01" printedname="Room08-01">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="82" e="73" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="73" holder="0" name="room08_02" printedname="Room08-02">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="74" w="72" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="74" holder="0" name="room08_03" printedname="Room08-03">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="64" s="255" e="75" w="73" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="75" holder="0" name="room08_04" printedname="Room08-04">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="65" s="85" e="76" w="74" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="76" holder="0" name="room08_05" printedname="Room08-05">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="77" w="75" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="77" holder="0" name="room08_06" printedname="Room08-06">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="78" w="76" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="78" holder="0" name="room08_07" printedname="Room08-07">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="68" s="88" e="79" w="77" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="79" holder="0" name="room08_08" printedname="Room08-08">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="69" s="255" e="80" w="78" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="80" holder="0" name="room08_09" printedname="Room08-09">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="81" w="79" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="81" holder="0" name="room08_10" printedname="Room08-10">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="91" e="255" w="80" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="82" holder="0" name="room09_01pill" printedname="Room09-01pill">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="72" s="92" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="83" holder="0" name="room09_02" printedname="Room09-02">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="93" e="84" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="84" holder="0" name="room09_03" printedname="Room09-03">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="94" e="85" w="83" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="85" holder="0" name="room09_04" printedname="Room09-04">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="75" s="255" e="86" w="84" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="86" holder="0" name="room09_05" printedname="Room09-05">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="87" w="85" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="87" holder="0" name="room09_06start" printedname="Room09-06START">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="88" w="86" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <synonyms names="" />
+        <nogo>
+          <w />
+          <e />
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="88" holder="0" name="room09_07" printedname="Room09-07">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="78" s="255" e="89" w="87" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="89" holder="0" name="room09_08" printedname="Room09-08">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="99" e="90" w="88" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="90" holder="0" name="room09_09" printedname="Room09-09">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="100" e="255" w="89" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="91" holder="0" name="room09_10pill" printedname="Room09-10pill">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="81" s="101" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="92" holder="0" name="room10_01" printedname="Room10-01">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="82" s="102" e="93" w="101" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="93" holder="0" name="room10_02" printedname="Room10-02">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="83" s="255" e="255" w="92" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="94" holder="0" name="room10_03" printedname="Room10-03">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="84" s="255" e="95" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="95" holder="0" name="room10_04" printedname="Room10-04">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="96" w="94" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="96" holder="0" name="room10_05" printedname="Room10-05">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="106" e="97" w="95" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="97" holder="0" name="room10_06" printedname="Room10-06">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="107" e="98" w="96" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="98" holder="0" name="room10_07" printedname="Room10-07">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="99" w="97" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="99" holder="0" name="room10_08" printedname="Room10-08">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="89" s="255" e="255" w="98" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="100" holder="0" name="room10_09" printedname="Room10-09">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="90" s="255" e="101" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="101" holder="0" name="room10_10" printedname="Room10-10">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="91" s="111" e="92" w="100" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="102" holder="0" name="room11_01" printedname="Room11-01">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="92" s="255" e="103" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="103" holder="0" name="room11_02" printedname="Room11-02">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="104" w="102" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="104" holder="0" name="room11_03" printedname="Room11-03">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="105" w="103" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="105" holder="0" name="room11_04" printedname="Room11-04">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="106" w="104" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="106" holder="0" name="room11_05" printedname="Room11-05">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="96" s="255" e="255" w="105" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="107" holder="0" name="room11_06" printedname="Room11-06">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="97" s="255" e="108" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="108" holder="0" name="room11_07" printedname="Room11-07">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="109" w="107" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="109" holder="0" name="room11_08" printedname="Room11-08">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="110" w="108" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="110" holder="0" name="room11_09" printedname="Room11-09">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="111" w="109" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="111" holder="0" name="room11_10" printedname="Room11-10">
+        <description>Description not set.</description>
+        <initialdescription />
+        <directions n="101" s="255" e="255" w="110" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="1" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="112" holder="22" name="pill1" printedname="Pill1">
+        <description>You notice nothing unexpected.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="113" holder="31" name="pill2" printedname="Pill2">
+        <description>You notice nothing unexpected.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="114" holder="46" name="ghost1" printedname="Ghost1">
+        <description>You notice nothing unexpected.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="115" holder="82" name="pill3" printedname="Pill3">
+        <description>You notice nothing unexpected.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="116" holder="83" name="ghost2" printedname="Ghost2">
+        <description>You notice nothing unexpected.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="117" holder="87" name="pacman" printedname="Pacman">
+        <description>You notice nothing unexpected.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+      <object id="118" holder="91" name="pill4" printedname="Pill4">
+        <description>You notice nothing unexpected.</description>
+        <initialdescription />
+        <directions n="255" s="255" e="255" w="255" ne="255" se="255" sw="255" nw="255" up="255" down="255" in="255" out="255" mass="0" />
+        <flags scenery="0" portable="0" container="0" supporter="0" open="0" wearable="0" emittinglight="0" locked="0" lockable="0" beingworn="0" user1="0" door="0" user2="0" user3="0" user4="0" />
+        <nogo>
+          <in>You can't enter that.</in>
+          <out>I don't know which way that is.</out>
+        </nogo>
+        <ImageId />
+      </object>
+    </objects>
+    <checks>
+      <check verb="n" check="check_move" />
+      <check verb="s" check="check_move" />
+      <check verb="e" check="check_move" />
+      <check verb="w" check="check_move" />
+      <check verb="u" check="check_move" />
+      <check verb="d" check="check_move" />
+      <check verb="ne" check="check_move" />
+      <check verb="nw" check="check_move" />
+      <check verb="se" check="check_move" />
+      <check verb="sw" check="check_move" />
+      <check verb="close" check="check_dobj_supplied" />
+      <check verb="close" check="check_dobj_opnable" />
+      <check verb="close" check="check_dobj_open" />
+      <check verb="drink" check="check_dobj_supplied" />
+      <check verb="drink" check="check_have_dobj" />
+      <check verb="drop" check="check_dobj_supplied" />
+      <check verb="drop" check="check_have_dobj" />
+      <check verb="eat" check="check_dobj_supplied" />
+      <check verb="eat" check="check_have_dobj" />
+      <check verb="enter" check="check_dobj_supplied" />
+      <check verb="enter" check="check_see_dobj" />
+      <check verb="enter" check="check_move" />
+      <check verb="out" check="check_move" />
+      <check verb="examine" check="check_dobj_supplied" />
+      <check verb="examine" check="check_see_dobj" />
+      <check verb="get" check="check_dobj_supplied" />
+      <check verb="get" check="check_see_dobj" />
+      <check verb="get" check="check_dont_have_dobj" />
+      <check verb="get" check="check_dobj_portable" />
+      <check verb="get" check="check_weight" />
+      <check verb="kill" check="check_dobj_supplied" />
+      <check verb="kill" check="check_see_dobj" />
+      <check verb="light" check="check_dobj_supplied" />
+      <check verb="light" check="check_have_dobj" />
+      <check verb="light" check="check_see_dobj" />
+      <check verb="open" check="check_dobj_supplied" />
+      <check verb="open" check="check_see_dobj" />
+      <check verb="open" check="check_dobj_opnable" />
+      <check verb="open" check="check_dobj_unlocked" />
+      <check verb="put" check="check_dobj_supplied" />
+      <check verb="put" check="check_prep_supplied" />
+      <check verb="put" check="check_iobj_supplied" />
+      <check verb="put" check="check_not_self_or_child" />
+      <check verb="put" check="check_have_dobj" />
+      <check verb="put" check="check_see_iobj" />
+      <check verb="put" check="check_put" />
+      <check verb="talk to" check="check_dobj_supplied" />
+      <check verb="talk to" check="check_see_dobj" />
+      <check verb="turn on" check="check_dobj_supplied" />
+      <check verb="turn on" check="check_see_dobj" />
+      <check verb="lock" check="check_dobj_supplied" />
+      <check verb="lock" check="check_see_dobj" />
+      <check verb="lock" check="check_dobj_lockable" />
+      <check verb="unlock" check="check_dobj_supplied" />
+      <check verb="unlock" check="check_see_dobj" />
+      <check verb="unlock" check="check_dobj_lockable" />
+      <check verb="look in" check="check_dobj_supplied" />
+      <check verb="look in" check="check_see_dobj" />
+      <check verb="wear" check="check_see_dobj" />
+      <check verb="use" check="check_have_dobj" />
+      <check verb="wear" check="check_have_dobj" />
+      <check verb="wear" check="check_dobj_wearable" />
+      <check verb="give" check="check_dobj_supplied" />
+      <check verb="give" check="check_have_dobj" />
+      <check verb="give" check="check_iobj_supplied" />
+      <check verb="give" check="check_see_iobj" />
+      <check verb="push" check="check_dobj_supplied" />
+      <check verb="push" check="check_see_dobj" />
+      <check verb="read" check="check_dobj_supplied" />
+      <check verb="read" check="check_see_dobj" />
+    </checks>
+    <sentences>
+      <sentence verb="wear" do="*" prep="" io="" type="before" sub="get_portable" />
+      <sentence verb="take" do="PLAYER" prep="" io="" type="instead" sub="not_possible" />
+      <sentence verb="kill" do="PLAYER" prep="" io="" type="instead" sub="kill_self" />
+      <sentence verb="kill" do="*" prep="" io="" type="instead" sub="default_kill" />
+      <sentence verb="talk to" do="PLAYER" prep="" io="" type="instead" sub="talk_to_self" />
+      <sentence verb="talk to" do="*" prep="" io="" type="instead" sub="default_talk" />
+      <sentence verb="listen" do="" prep="" io="" type="instead" sub="listen" />
+      <sentence verb="wait" do="" prep="" io="" type="instead" sub="wait" />
+      <sentence verb="yell" do="" prep="" io="" type="instead" sub="yell" />
+      <sentence verb="jump" do="" prep="" io="" type="instead" sub="jump" />
+      <sentence verb="eat" do="*" prep="" io="" type="instead" sub="default_eat" />
+      <sentence verb="drink" do="*" prep="" io="" type="instead" sub="default_drink" />
+      <sentence verb="smell" do="*" prep="" io="" type="instead" sub="smell" />
+      <sentence verb="take" do="*" prep="" io="" type="after" sub="report_take" />
+      <sentence verb="drop" do="*" prep="" io="" type="after" sub="report_drop" />
+      <sentence verb="close" do="*" prep="" io="" type="after" sub="report_closed" />
+      <sentence verb="wear" do="*" prep="" io="" type="after" sub="report_wear" />
+    </sentences>
+    <routines>
+      <routine name="game_start">//put any startup code or messages here
+</routine>
+      <routine name="reset">//put reset code here
+</routine>
+      <routine name="not_possible">if (dobj == player) { println("Not physically possible.");  } </routine>
+      <routine name="get_portable">if (dobj.portable == 1) { if (dobj.holder != player) { println("(Taken)"); dobj.holder = player;}  } </routine>
+      <routine name="kill_self">println("If you are experiencing suicidal thoughts you should seek psychiatric help.");</routine>
+      <routine name="default_kill">println("Perhaps you should count to 3 and calm down.");</routine>
+      <routine name="kill_player">println("***YOU HAVE DIED***.");
+reset();
+</routine>
+      <routine name="talk_to_self">println("Talking to yourself is a sign of impending mental collapse.");</routine>
+      <routine name="default_talk">println("That fails to produce an exciting conversation.");</routine>
+      <routine name="listen">println("You hear nothing unexpected.");</routine>
+      <routine name="smell">println("You smell nothing unexpected.");</routine>
+      <routine name="wait">println("Time passes...");</routine>
+      <routine name="yell">println("AAAAAAAAAAAAARRRRGGGGGG!");</routine>
+      <routine name="jump">println("WHEEEEEE!");</routine>
+      <routine name="default_eat">println("That's not part of a healthy diet.");</routine>
+      <routine name="default_drink">println("You can't drink that.");</routine>
+      <routine name="quit_sub">println("[Note: you can't quit the test client]");</routine>
+      <routine name="report_take">println("Taken.");</routine>
+      <routine name="report_drop">println("Dropped.");</routine>
+      <routine name="report_closed">println("Closed.");</routine>
+      <routine name="report_wear">print("You put on the ");
+printname(dobj);
+println(".");</routine>
+    </routines>
+    <CheckFunctions />
+    <events />
+    <variables>
+      <builtin>
+        <var name="dobj" addr="dobjId" value="0" />
+        <var name="iobj" addr="iobjId" value="0" />
+        <var name="score" addr="score" value="0" />
+        <var name="moves" addr="moves" value="0" />
+        <var name="health" addr="health" value="100" />
+        <var name="turnsWithoutLight" addr="turnsWithoutLight" value="0" />
+        <var name="gameOver" addr="gameOver" value="0" />
+        <var name="answer" addr="answer" value="0" />
+        <var name="maxWeight" addr="maxWeight" value="10" />
+        <var name="invWeight" addr="invWeight" value="0" />
+      </builtin>
+      <user />
+    </variables>
+    <Arrays />
+    <BuildSettings>
+      <SpectrumBorder>0</SpectrumBorder>
+      <SpectrumPen>7</SpectrumPen>
+      <SpectrumPaper>0</SpectrumPaper>
+      <SpectrumFont />
+      <BrightPalette>true</BrightPalette>
+      <EnableGraphics>false</EnableGraphics>
+      <C64LoadScreen />
+      <CPMPostBuildScript />
+      <C64Border>0</C64Border>
+      <C64BG>2</C64BG>
+      <C64FG>3</C64FG>
+      <StatusLine>true</StatusLine>
+    </BuildSettings>
+    <StringDefs>
+      <Strings>
+        <StringDef>
+          <StringName>LeadingA</StringName>
+          <Z80name>leadinga</Z80name>
+          <SF02Name>leadingA</SF02Name>
+          <Value>A </Value>
+        </StringDef>
+        <StringDef>
+          <StringName>The</StringName>
+          <Z80name>the</Z80name>
+          <SF02Name>the</SF02Name>
+          <Value>The </Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Pardon</StringName>
+          <Z80name>pardonstr</Z80name>
+          <SF02Name>pardon</SF02Name>
+          <Value>Pardon?</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>DontUnderstand</StringName>
+          <Z80name>confused</Z80name>
+          <SF02Name>confused</SF02Name>
+          <Value>I don't follow you.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Done</StringName>
+          <Z80name>done</Z80name>
+          <SF02Name>done</SF02Name>
+          <Value>Done.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Is</StringName>
+          <Z80name>is</Z80name>
+          <SF02Name>is</SF02Name>
+          <Value> is...</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>InThe</StringName>
+          <Z80name>inthe </Z80name>
+          <SF02Name>inthe </SF02Name>
+          <Value>In the </Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Onthe</StringName>
+          <Z80name>onthe</Z80name>
+          <SF02Name>onthe</SF02Name>
+          <Value>On the </Value>
+        </StringDef>
+        <StringDef>
+          <StringName>NotOpenable</StringName>
+          <Z80name>notopenable</Z80name>
+          <SF02Name>notOpenable</SF02Name>
+          <Value>That's not openable.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>NotCloseable</StringName>
+          <Z80name>notcloseable</Z80name>
+          <SF02Name>notcloseable</SF02Name>
+          <Value>That's not closeable.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>AlreadyOpen</StringName>
+          <Z80name>alreadyopen</Z80name>
+          <SF02Name>alreadyOpen</SF02Name>
+          <Value>It's already open.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>AlreadyClosed</StringName>
+          <Z80name>alreadyclosed</Z80name>
+          <SF02Name>alreadyClosed</SF02Name>
+          <Value>It's already closed.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>AlreadyHave</StringName>
+          <Z80name>alreadyhave</Z80name>
+          <SF02Name>alreadyHave</SF02Name>
+          <Value>You already have that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>CantTake</StringName>
+          <Z80name>notportable</Z80name>
+          <SF02Name>notPortable</SF02Name>
+          <Value>You can't take that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>CantDo</StringName>
+          <Z80name>cantDoThat</Z80name>
+          <SF02Name>cantDoThat</SF02Name>
+          <Value>You can't do that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Carrying</StringName>
+          <Z80name>carrying</Z80name>
+          <SF02Name>carrying</SF02Name>
+          <Value>You are carrying...</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>TooHeavy</StringName>
+          <Z80name>tooheavystr</Z80name>
+          <SF02Name>tooHeavy</SF02Name>
+          <Value>You can't carry any more.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>HaveNothing</StringName>
+          <Z80name>noitems</Z80name>
+          <SF02Name>emptyhanded</SF02Name>
+          <Value>You are empty handed.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>CantSee</StringName>
+          <Z80name>pitchdark</Z80name>
+          <SF02Name>noLight</SF02Name>
+          <Value>It is pitch dark.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>DontHave</StringName>
+          <Z80name>donthave</Z80name>
+          <SF02Name>dontHave</SF02Name>
+          <Value>You don't have that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>DontSee</StringName>
+          <Z80name>dontseestr</Z80name>
+          <SF02Name>dontsee</SF02Name>
+          <Value>You don't see that here.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>CantSeeIn</StringName>
+          <Z80name>cantlook</Z80name>
+          <SF02Name>noPeek</SF02Name>
+          <Value>You can't see inside that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>FindNothing</StringName>
+          <Z80name>nothing</Z80name>
+          <SF02Name>itsEmpty</SF02Name>
+          <Value>You find nothing.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>CantOpen</StringName>
+          <Z80name>cantopen</Z80name>
+          <SF02Name>cantopen</SF02Name>
+          <Value>You can't open that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>CantEnter</StringName>
+          <Z80name>noenter</Z80name>
+          <SF02Name>noenter</SF02Name>
+          <Value>You can't enter that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>NotContainer</StringName>
+          <Z80name>notcontainer</Z80name>
+          <SF02Name>notContainer</SF02Name>
+          <Value>You can't put things in that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>NotSupporter</StringName>
+          <Z80name>notsupporter</Z80name>
+          <SF02Name>nosurface</SF02Name>
+          <Value>You find no suitable surface.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>CantWear</StringName>
+          <Z80name>notwearable</Z80name>
+          <SF02Name>notwearable</SF02Name>
+          <Value>You can't wear that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>AlreadyWearing</StringName>
+          <Z80name>alreadyworn</Z80name>
+          <SF02Name>alreadyWorn</SF02Name>
+          <Value>You're already wearing that.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Opening</StringName>
+          <Z80name>openingThe</Z80name>
+          <SF02Name>openningThe</SF02Name>
+          <Value>Opening the </Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Reveals</StringName>
+          <Z80name>reveals</Z80name>
+          <SF02Name>reveals</SF02Name>
+          <Value> reveals...</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>ItsClosed</StringName>
+          <Z80name>closed</Z80name>
+          <SF02Name>itsClosed</SF02Name>
+          <Value>It's closed.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>IsClosed</StringName>
+          <Z80name>isclosed</Z80name>
+          <SF02Name>isclosed</SF02Name>
+          <Value> is closed.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>IsEmpty</StringName>
+          <Z80name>isempty</Z80name>
+          <SF02Name>isempty</SF02Name>
+          <Value> is empty.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>IsLocked</StringName>
+          <Z80name>isLocked</Z80name>
+          <SF02Name>isLocked</SF02Name>
+          <Value> is locked.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>ItsLocked</StringName>
+          <Z80name>itslocked</Z80name>
+          <SF02Name>itslocked</SF02Name>
+          <Value>It's locked.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>DoorClosed</StringName>
+          <Z80name>doorclosed</Z80name>
+          <SF02Name>doorclosed</SF02Name>
+          <Value>The door is closed.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>ThereIsA</StringName>
+          <Z80name>thereisa</Z80name>
+          <SF02Name>thereisa</SF02Name>
+          <Value>There is a </Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Here</StringName>
+          <Z80name>here</Z80name>
+          <SF02Name>here</SF02Name>
+          <Value> here.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Contains</StringName>
+          <Z80name>contains</Z80name>
+          <SF02Name>contains</SF02Name>
+          <Value> contains...</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>ItsNotLocked</StringName>
+          <Z80name>notlocked</Z80name>
+          <SF02Name>notlocked</SF02Name>
+          <Value>It's not locked.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>NotLockable</StringName>
+          <Z80name>notLockable</Z80name>
+          <SF02Name>notLockable</SF02Name>
+          <Value>It's not locked.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>AlreadyLocked</StringName>
+          <Z80name>alreadyLocked</Z80name>
+          <SF02Name>alreadyLocked</SF02Name>
+          <Value>It's already locked.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>AlreadyUnlocked</StringName>
+          <Z80name>alreadyUnlocked</Z80name>
+          <SF02Name>alreadyUnlocked</SF02Name>
+          <Value>It's already unlocked.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>NotPossible</StringName>
+          <Z80name>impossible</Z80name>
+          <SF02Name>impossible</SF02Name>
+          <Value>That's not possible.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>WhichWay</StringName>
+          <Z80name />
+          <SF02Name />
+          <Value>I don't know which way that is.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>BadPut</StringName>
+          <Z80name>badput</Z80name>
+          <SF02Name>badput</SF02Name>
+          <Value>That would violate the laws of physics.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>ProvidingLight</StringName>
+          <Z80name>providingLight</Z80name>
+          <SF02Name>providingLight</SF02Name>
+          <Value> (providing light)</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>BeingWorn</StringName>
+          <Z80name>beingworn</Z80name>
+          <SF02Name>beingWorn</SF02Name>
+          <Value> (being worn)</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>MissingNoun</StringName>
+          <Z80name>missingnoun</Z80name>
+          <SF02Name>missingDobj</SF02Name>
+          <Value>Missing noun.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>MissingPrep</StringName>
+          <Z80name>missingprep</Z80name>
+          <SF02Name>missingPrep</SF02Name>
+          <Value>Missing preposition.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>MissingNoun2</StringName>
+          <Z80name>missing_io</Z80name>
+          <SF02Name>missing_io</SF02Name>
+          <Value>Missing second noun.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>BadWord</StringName>
+          <Z80name>dontknowstr</Z80name>
+          <SF02Name>badword</SF02Name>
+          <Value>I don't know the word '</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>BadVerb</StringName>
+          <Z80name>badverbstr</Z80name>
+          <SF02Name>badverb</SF02Name>
+          <Value>I don't know the verb '</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Ambiguous</StringName>
+          <Z80name>ambigstr</Z80name>
+          <SF02Name>ambig</SF02Name>
+          <Value>I don't know which one you mean.</Value>
+        </StringDef>
+        <StringDef>
+          <StringName>Bye</StringName>
+          <Z80name>bye</Z80name>
+          <SF02Name>bye</SF02Name>
+          <Value>Bye.</Value>
+        </StringDef>
+      </Strings>
+    </StringDefs>
+    <YouCantGoThatWay>You can't go that way.</YouCantGoThatWay>
+    <DefaultDescription>You notice nothing unexpected.</DefaultDescription>
+  </project>
+</xml>

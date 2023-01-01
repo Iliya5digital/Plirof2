@@ -1,0 +1,97 @@
+5 CLS :PRINT "Welcome To Medical Center Server": PAUSE 0
+10 GO SUB 9500: GO SUB subpass: GO SUB submenu:
+20 INPUT "PLEASE ENTER THE SYBSYSTEM CODE to enter :";a$
+25 REM IF VAL$(a$)<>VAL(a$) THEN GOTO 20
+29 REM ADD AND OPTION STOP - System Tasks Of Online Processes
+30 IF VAL(a$)<1 OR VAL (a$)>20 THEN GOTO 20
+40 LET systemid=VAL(a$)
+100 GO SUB 9400:GO SUB submain+systemid*10
+	
+900 POKE 23610,1+INT (RND*253)
+1950 GO TO 5
+
+
+
+
+
+4998 REM ---------------------------------------------
+4999 REM Subsystem logins
+5010 INPUT #3,a : REM [b]J Invalid I/O device, 10:1[/b]
+5020 BORDER 9 : REM [B]K Invalid colour, 10:1[/b]
+5030 DIM a(50000) :REM
+5040 FOR I=1 TO 0 : REM [b]I FOR without NEXT, 10:1[/b]
+5050 PRINT 10^39
+
+5060 LET x=0: NEXT x :REM 
+5070 NEXT x : REM 
+5080 REM FORMAT "p";0
+5090 DIM a(5):PRINT a(6) : REM 
+5100 PRINT USR "z" : REM [B]A Invalid argument, 0:1[/B]
+5110 DIM a(70000) : REM [B]B INTEGER out of range, 0:1[/B]
+5120 SAVE "Long File Name" : REM [B]C Nonsense in BASIC, 0:1[/B]
+5130 READ a :REM [B]E Out of DATA, 0:1[/B]
+5140 SAVE "" : REM [b]F Invalid file name, 10:1[/b]
+5150 CLEAR 1 : REM M RAMTOP no good, 0:1
+5160 OPEN #16, "P" : REM O Invalid stream, 0:1
+5170 PRINT FN a() : REM P FN without DEF FN, 0:1
+5180 DEF FN a(x) = 1 : PRINT FN a (2,3) : REM Q Parameter error, 10:2
+5190 REM FORMAT "";0 : REM O invalid Stream
+5200 SAVE INKEY$ CODE CODE INKEY$, CODE INKEY$ : REM F Invalid file name, 10:0
+
+5250 REM **** POKE 23610,28 : REM ASk FOR PORT ID : T ? 1982 Sinclair Research Ltd, 0:1 
+5400 RETURN
+
+6500 REM wait some seconds--------------------------
+6510 FOR I=1 TO 100: PAUSE 1:NEXT I
+6600 RETURN
+
+6999 REM ---------------------------------------------
+7000 REM Intro Text
+7030 PRINT "Please you are connecting in a life critical system. Wrong commands might cause deaths! Your IP is logged!"
+7040 PRINT "All security measures are taken but, in case you have a crash try doing RUN +ENTER in the first 10seconds. "
+7500 RETURN
+
+
+
+7999 REM ---------------------------------------------
+8000 REM Secure Password Protection
+8010 LET p$="1234"
+8020 CLS : PAPER pwdpaper: INK pwdink: BORDER pwdborder
+8030 PRINT ,,"Weclome to the infallible "'FLASH 1;n$;FLASH 0
+
+8040 PRINT "This system is protected"'"by a secured linux core that"'"runs on top of a BASIC core"
+8050 INPUT "Please enter your username";u$
+8060 INPUT "Please, make sure noone is looking and THEN enter your password: ";e$ 
+8070 IF e$<>p$ THEN CLS:PRINT FLASH 0;"WROND CREDENTIALS !";FLASH 0'" Lives DEPEND on you please BE CAREFLU!" : GOSUB wait: GO TO 8030
+8500 RETURN
+
+
+
+8999 REM ---------------------------------------------
+9000 REM Subsystem Integration option (shows ONLY systems that are online)
+
+
+9180 PRINT "STOP) System Tasks and Online Processes";
+
+9390 RETURN
+
+9400 REM Logging messages
+9410 CLS : PAPER menupaper:INK menuink: BORDER menuborder
+9110 PRINT ,,"Weclome to the infallible "'FLASH 1;n$;FLASH 0
+9120 FOR I=1 TO 10: 
+9130 PRINT AT 10,5 ;INVERSE 1;FLASH 1;" Connecting .  ";INVERSE 0;FLASH 0:FOR T=1 TO 50:NEXT T
+9140 PRINT AT 10,5 ;INVERSE 1;FLASH 1;" Connecting ..  ";INVERSE 0;FLASH 0:FOR T=1 TO 50:NEXT T
+9150 PRINT AT 10,5 ;INVERSE 1;FLASH 1;" Connecting ...  ";INVERSE 0;FLASH 0:FOR T=1 TO 50:NEXT T
+9160 NEXT I
+
+9450 RETURN
+
+9600 REM -------------------------
+9610 REM init variables
+9620 LET n$="SBOSSA - Spectrum Basic Overwatch Security System Administration" 
+9630 LET pwdink=2: LET pwdpaper=0: LET pwdborder=2
+9640 LET menuink=2: LET menupaper=0: LET menuborder=2
+9650 LET wait=6500: LET subpass=8000: LET submenu=9000: LET subintro=7000: LET submain=5000
+
+9900 RETURN
+

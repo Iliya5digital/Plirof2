@@ -1,0 +1,207 @@
+1 REM https://worldofspectrum.org/forums/discussion/14410/little-basic-game
+
+Try to make all standard BASIC-errors and tell us how you did it.
+Not allowed i.e. :
+
+PRINT USR 1362
+D - Break cont-repeats
+
+but ok
+10 GO TO 10
+RUN and press BREAK
+D - Break cont-repeats
+
+10 LET x=0
+20 NEXT x
+RUN
+[B]1 NEXT without FOR, 20:1[/B]
+ 
+10 NEXT x
+RUN
+[B]2 Variable not found, 10:1[/B]
+
+10 DIM a(5)
+20 PRINT a(6)
+RUN
+[B]3 Subscript wrong, 20:1[/B]
+
+DIM a(50000)
+[B]4 Out of memory, 0:1[/B]
+
+PRINT AT 22,0;"Error"
+[B]5 Out of screen, 0:1[/B]
+
+PRINT 10^39
+[B]6 Number too big, 0:1[/B]
+
+RETURN
+[B]7 RETURN without GOSUB, 0:1[/B]
+
+10 STOP
+RUN
+[B]9 STOP statement, 10:1[/B]
+
+PRINT USR "z"
+[B]A Invalid argument, 0:1[/B]
+
+DIM a(70000)
+[B]B Integer out of range, 0:1[/B]
+
+SAVE "Long File Name"
+[B]C Nonsense in BASIC, 0:1[/B]
+
+READ a
+[B]E Out of DATA, 0:1[/B]
+
+10 SAVE ""
+RUN
+
+[b]F Invalid file name, 10:1[/b]
+
+Reset
+CLEAR 23860
+>type 10 PRINT and press enter.
+
+[b]G No room for line, 0:1[/b]
+
+10 INPUT a$
+RUN
+>input STOP, press Enter.
+(I guess there were two alternate method to do that.)
+[b]H STOP in INPUT[/b]
+
+10 FOR I=1 TO 0
+RUN
+
+[b]I FOR without NEXT, 10:1[/b]
+
+10 INPUT #3,a
+RUN
+[b]J Invalid I/O device, 10:1[/b]
+
+10 BORDER 9
+RUN
+
+[B]K Invalid colour, 10:1[/b]
+
+
+10 GO TO 10
+RUN
+Press BREAK
+
+L BREAK into program, 10:1
+
+
+CLEAR 1
+
+M RAMTOP no good, 0:1
+
+10 STOP
+RUN
+10 (delete line)
+CONTINUE
+
+N Statement Lost, 0:1
+
+LOAD""
+Play any tape and stop it during the loading of a block
+
+R Tape Loading Error, 0:1
+
+That leaves four to go (I think).
+
+___________
+OPEN #16, "P"
+
+O Invalid stream, 0:1
+
+PRINT FN a() : REM with no program
+
+
+P FN without DEF FN, 0:1
+
+10 DEF FN a(x) = 1 : PRINT FN a (2,3)
+RUN
+
+Q Parameter error, 10:2
+
+may i continue? :grin:
+
+SAVE ! "a" SCREEN$
+LOAD ! "a"
+
+b Wrong file type
+
+PLAY "((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((((a))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))"
+
+d Too many brackets
+
+SAVE ! "a"
+SAVE ! "a"
+
+e File already exists
+
+ERASE ! ""
+
+f Invalid name
+
+No g?
+
+Reset speccy
+LOAD ! "b"
+
+h File does not exist
+
+FORMAT "";0
+
+i Invalid device
+
+FORMAT "p";0
+
+j Invalid baud rate
+
+PLAY "k"
+
+k Invalid note name
+
+PLAY "V100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+
+l Number to big
+
+PLAY "O7##########################################################################B"
+
+m Note out of range
+
+PLAY "V100"
+
+n Out of range
+
+As for the others:
+
+a I dont have a clue how to get
+
+c - I tried
+10 SAVE ! "a" 1,60000
+20 load ! "a" 50000,60000
+
+and my computer exploded, but i didn't get the error message though
+
+g - I don't know if it even exists
+
+o - I tried
+10 LET a$="2"
+20 FOR i=1 to 2000
+30 LET a$=a$+"_2"
+40 NEXT i
+50 LET a$=a$+"c"
+60 PLAY a$
+
+10 SAVE INKEY$ CODE CODE INKEY$, CODE INKEY$
+
+might give:
+F Invalid file name, 10:0
+
+_________
+POKE 23610,28
+
+T ? 1982 Sinclair Research Ltd, 0:1 

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<!-- ORIGINALS http://www.breakintoprogram.co.uk/programming/basic/part-5 -->
+<html lang="en-US">
+   <head>
+      <meta charset="UTF-8"/>
+
+      <style>
+         code {
+         font-family: Consolas,"courier new";
+         color: crimson;
+         #background-color: #f1f1f1;
+         background-color: #darkgrey;
+         padding: 2px;
+         font-size: 105%;
+         }
+      </style>
+      <style type='text/css' id='gutter'>.gutter {color: white}</style>
+      
+   </head>
+   <body>
+      <article id="post-17" class="content-page post-17 page type-page status-publish hentry">
+         <header class="page-header">
+            <h1 class="page-title entry-title" itemprop="headline name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Μέρος 1: Γεια σας!</font></font></h1>
+         </header>
+         <!-- .page-header --> 
+         <div class="entry-content clearfix">
+            <link itemprop="mainEntityOfPage" href="https://www-breakintoprogram-co-uk.translate.goog/programming/basic/part-1?_x_tr_sl=auto&amp;_x_tr_tl=el&amp;_x_tr_hl=el&amp;_x_tr_pto=wapp&amp;_x_tr_sch=http">
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Νομίζω ότι έτσι ξεκίνησαν οι περισσότεροι τον προγραμματισμό και είναι πιθανώς ο προπάππους του παραδείγματος του προγράμματος "Hello World" που είναι στη μόδα αυτή τη στιγμή.</font></font></p>
+            <div>
+               <div id="highlighter_381271" class="syntaxhighlighter  plain">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     <tbody>
+                        <tr>
+                           <td class="gutter">
+                              <div class="line number1 index0 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></div>
+                              <div class="line number2 index1 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></div>
+                           </td>
+                           <td class="code">
+                              <div class="container">
+                                 <div class="line number1 index0 alt2"><code class="plain plain">10 PRINT "Hello! ";</code></div>
+                                 <div class="line number2 index1 alt1"><code class="plain plain">20 GOTO 10</code></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Θα έμπαινες στο τοπικό κατάστημα υπολογιστών, θα πήγαινες στον πλησιέστερο υπολογιστή, θα πληκτρολογούσες το πρόγραμμα, θα εκδώσεις την εντολή RUN (και αν έβαζες μια αγενή λέξη στη δήλωση PRINT) κυριολεκτικά θα ΕΚΤΕΛΕΣΕΙΣ!</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Δύο απλές γραμμές κώδικα και μερικοί αριθμοί. </font><font style="vertical-align: inherit;">Τι σημαίνει όμως όλο αυτό;</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Λοιπόν, ο κώδικας είναι γραμμένος σε μια γλώσσα προγραμματισμού που ονομάζεται </font></font><a title="ΒΑΣΙΚΟΣ" href="https://translate.google.com/website?sl=auto&amp;tl=el&amp;hl=el&amp;client=webapp&amp;u=http://en.wikipedia.org/wiki/BASIC" target="_blank"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BASIC</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> . </font><font style="vertical-align: inherit;">Το BASIC είναι ένα αρκτικόλεξο που σημαίνει </font></font><span style="text-decoration: underline;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">B</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> eginners </font></font><span style="text-decoration: underline;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">A</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ll </font></font><span style="text-decoration: underline;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">S</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> συμβολική </font></font><span style="text-decoration: underline;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">I</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> nstruction </font></font><span style="text-decoration: underline;"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">C</font></font></span><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> ωδή.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Το πρόγραμμα αποτελείται από δύο γραμμές οδηγιών. </font><font style="vertical-align: inherit;">Κάθε γραμμή ξεκινά με έναν μοναδικό αριθμό γραμμής. </font><font style="vertical-align: inherit;">το πρόγραμμα ταξινομείται με αυτούς τους αριθμούς γραμμών, επομένως η γραμμή 20 ακολουθεί τη γραμμή 10. Εάν εισαγάγα τη γραμμή 15, αυτή θα εμφανιζόταν μεταξύ των δύο γραμμών που εισάγατε.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Η αρίθμηση γραμμών είναι σημαντική καθώς οι υπολογιστές θα εκτελούν τις οδηγίες σε ένα πρόγραμμα από πάνω προς τα κάτω, εκτός και αν τους ζητηθεί να κάνουν διαφορετικά.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Η προαναφερθείσα εντολή RUN δίνει οδηγίες στον υπολογιστή να ξεκινήσει το πρόγραμμα από την κορυφή. </font><font style="vertical-align: inherit;">Έτσι, το πρώτο πράγμα που θα κάνει ο υπολογιστής σε αυτό το σύντομο πρόγραμμα είναι η έξοδος "Hello" στην οθόνη.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Στη συνέχεια, ο υπολογιστής θα εκτελέσει την επόμενη εντολή. </font><font style="vertical-align: inherit;">Αυτό δίνει εντολή στον υπολογιστή να επιστρέψει στη γραμμή 10.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Η έξοδος αυτού του προγράμματος είναι επομένως μια οθόνη γεμάτη "Hello".</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Αρκετά απλό, ε; </font><font style="vertical-align: inherit;">Δεν το λένε ΒΑΣΙΚΟ για τίποτα. </font><font style="vertical-align: inherit;">Εντάξει, ας συνεχίσουμε με το επόμενο μάθημα για τις </font></font><a title="Μέρος 2: Μεταβλητές" href="https://www-breakintoprogram-co-uk.translate.goog/programming/basic/part-2?_x_tr_sl=auto&amp;_x_tr_tl=el&amp;_x_tr_hl=el&amp;_x_tr_pto=wapp&amp;_x_tr_sch=http"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Μεταβλητές</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> …</font></font></p>
+         </div>
+         <!-- .entry-content --> 
+      </article>
+      <article id="post-47" class="content-page post-47 page type-page status-publish hentry">
+         <header class="page-header">
+            <h1 class="page-title entry-title" itemprop="headline name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Μέρος 2: Μεταβλητές</font></font></h1>
+         </header>
+         <!-- .page-header --> 
+         <div class="entry-content clearfix">
+            <link itemprop="mainEntityOfPage" href="https://www-breakintoprogram-co-uk.translate.goog/programming/basic/part-2?_x_tr_sl=auto&amp;_x_tr_tl=el&amp;_x_tr_hl=el&amp;_x_tr_pto=wapp&amp;_x_tr_sch=http">
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Εντάξει, έχουμε ένα απλό πρόγραμμα. </font><font style="vertical-align: inherit;">Εκτυπώνει "Hello" σε όλη την οθόνη, αλλά θα μπορούσα να το κάνω αυτό σε ένα κομμάτι A4 με ένα στυλό. </font><font style="vertical-align: inherit;">Πώς κάνουμε πραγματικά τον υπολογιστή να κάνει κάτι χρήσιμο.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Μια μεταβλητή ακούγεται πολύ περίπλοκη, δεν είναι. </font><font style="vertical-align: inherit;">Λοιπόν, είναι πραγματικά πολύ απλό. </font><font style="vertical-align: inherit;">Είναι λίγο <b>σαν τη μνήμη στην αριθμομηχανή τσέπης σας, αλλά αντί να έχετε απλώς μια, μπορείτε να έχετε όσες θέλετε.</b></font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Οι μεταβλητές εκχωρούνται με την εντολή LET. </font><font style="vertical-align: inherit;">Έτσι, αν ήθελα να βάλω τη μεταβλητή A να είναι η τιμή 123, θα έγραφα ένα πρόγραμμα όπως αυτό:</font></font></p>
+            <div>
+               <div id="highlighter_927327" class="syntaxhighlighter  plain">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     <tbody>
+                        <tr>
+                           <td class="gutter">
+                              <div class="line number1 index0 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></div>
+                           </td>
+                           <td class="code">
+                              <div class="container">
+                                 <div class="line number1 index0 alt2"><code class="plain plain">10 LET A = 123</code></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ΕΝΤΑΞΕΙ. </font><font style="vertical-align: inherit;">Δεν είναι πολύ ενδιαφέρον πρόγραμμα. </font><font style="vertical-align: inherit;">Μπορούμε ωστόσο να κάνουμε μερικά ενδιαφέροντα πράγματα με μεταβλητές. </font><font style="vertical-align: inherit;">Επιτρέψτε μου να επεκτείνω το πρόγραμμα λίγο περισσότερο:</font></font></p>
+            <div>
+               <div id="highlighter_32474" class="syntaxhighlighter  plain">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     <tbody>
+                        <tr>
+                           <td class="gutter">
+                              <div class="line number1 index0 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></div>
+                              <div class="line number2 index1 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></div>
+                              <div class="line number3 index2 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></div>
+                              <div class="line number4 index3 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></div>
+                           </td>
+                           <td class="code">
+                              <div class="container">
+                                 <div class="line number1 index0 alt2"><code class="plain plain">10 LET A = 123</code></div>
+                                 <div class="line number2 index1 alt1"><code class="plain plain">20 PRINT "The value of A is "; A</code></div>
+                                 <div class="line number3 index2 alt2"><code class="plain plain">30 LET A = A + 1</code></div>
+                                 <div class="line number4 index3 alt1"><code class="plain plain">40 PRINT "The value of A is now "; A</code></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Η έξοδος αυτού του προγράμματος είναι:</font></font></p>
+            <pre><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">The value of A is  123</font></font><font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+The value of A is now 124</font></font></pre>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Θα πρέπει να είναι αρκετά εύκολο να ακολουθήσετε αυτό το πρόγραμμα.</font></font></p>
+            <ul>
+               <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Γραμμή 10: Η μεταβλητή Α ορίζεται στην τιμή 123</font></font></li>
+               <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Γραμμή 20: Εκτυπώνει το κείμενο «The value of A is » ακολουθούμενο από την τιμή της μεταβλητής.</font></font></li>
+               <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Γραμμή 30: Αυτό είναι πολύ έξυπνο. </font><font style="vertical-align: inherit;">Εκχωρεί εκ νέου τη μεταβλητή A στην τιμή A+1, οπότε το A είναι τώρα 124</font></font></li>
+               <li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Γραμμή 40: Εκτυπώνει τη νέα τιμή του A</font></font></li>
+            </ul>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Τώρα αυτό είναι όπου η αναλογία της μνήμης της αριθμομηχανής πέφτει κάτω. </font><font style="vertical-align: inherit;">Οι υπολογιστές μπορούν επίσης να αποθηκεύουν κείμενο σε μεταβλητές. </font><font style="vertical-align: inherit;">Οι μεταβλητές αυτού του τύπου ονομάζονται Μεταβλητές συμβολοσειράς και στη BASIC έχουν σύμβολο "$" μετά το όνομα της μεταβλητής.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Για παράδειγμα, θα μπορούσαμε να προσθέσουμε αυτή τη γραμμή στο πρόγραμμά μας:</font></font></p>
+            <div>
+               <div id="highlighter_427327" class="syntaxhighlighter  plain">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     <tbody>
+                        <tr>
+                           <td class="gutter">
+                              <div class="line number1 index0 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></div>
+                           </td>
+                           <td class="code">
+                              <div class="container">
+                                 <div class="line number1 index0 alt2"><code class="plain plain">15 LET A$ = "The value of A is "</code></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Σημειώστε ότι οι συμβολοσειρές περικλείονται πάντα μέσα σε εισαγωγικά.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Μπορούμε τώρα να γράψουμε το πρόγραμμά μας για να χρησιμοποιήσουμε αυτή τη νέα μεταβλητή ως εξής:</font></font></p>
+            <div>
+               <div id="highlighter_727503" class="syntaxhighlighter  plain">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     <tbody>
+                        <tr>
+                           <td class="gutter">
+                              <div class="line number1 index0 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></div>
+                              <div class="line number2 index1 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></div>
+                              <div class="line number3 index2 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></div>
+                              <div class="line number4 index3 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></div>
+                              <div class="line number5 index4 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></div>
+                           </td>
+                           <td class="code">
+                              <div class="container">
+                                 <div class="line number1 index0 alt2"><code class="plain plain">10 LET A = 123</code></div>
+                                 <div class="line number2 index1 alt1"><code class="plain plain">15 LET A$ = "The value of A is "</code></div>
+                                 <div class="line number3 index2 alt2"><code class="plain plain">20 PRINT A$; A</code></div>
+                                 <div class="line number4 index3 alt1"><code class="plain plain">30 LET A = A + 1</code></div>
+                                 <div class="line number5 index4 alt2"><code class="plain plain">40 PRINT A$; "now "; A</code></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <p>Η έξοδος αυτού του προγράμματος είναι πανομοιότυπη με το προηγούμενο πρόγραμμα, αλλά με ένα πλεονέκτημα. Στο πρώτο πρόγραμμα, εάν χρειαζόταν να αλλάξουμε το εκτυπωμένο κείμενο, θα έπρεπε να αλλάξουμε δύο γραμμές κώδικα. Στο νέο πρόγραμμα, απλώς αλλάζουμε το κείμενο στον ορισμό συμβολοσειράς στη γραμμή 15.</p>
+            <p>Αυτό μπορεί να μην φαίνεται σημαντικό με αυτό το πρόγραμμα, αλλά εάν το πρόγραμμα περιείχε χιλιάδες γραμμές κώδικα και δεν ξέρατε πού ήταν το κείμενο, θα μπορούσε να σας εξοικονομήσει ώρες.</p>
+            <p>Στη συνέχεια, θα μάθουμε πώς οι υπολογιστές παίρνουν αποφάσεις…</p>
+         </div>
+         <!-- .entry-content --> 
+      </article>
+      <article id="post-50" class="content-page post-50 page type-page status-publish hentry">
+         <header class="page-header">
+            <h1 class="page-title entry-title" itemprop="headline name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Μέρος 3: ΑΝ…</font></font></h1>
+         </header>
+         <!-- .page-header --> 
+         <div class="entry-content clearfix">
+            
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;" class="">Μέχρι στιγμής έχουμε μάθει πώς να εκτυπώνουμε πράγματα στην οθόνη και να αποθηκεύουμε αριθμούς και κείμενο σε μεταβλητές. </font><font style="vertical-align: inherit;">Είμαστε ακόμη πολύ μακριά από την ανάπτυξη της εκδοχής μας του “Angry Birds”, αλλά δεν είμαστε μακριά…</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Μία από τις πιο σημαντικές εντολές που έχει ένας υπολογιστής είναι η δήλωση "IF". </font><font style="vertical-align: inherit;">Αυτό επιτρέπει στον υπολογιστή να λάβει μια απόφαση.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Παρεμπιπτόντως, έχετε παρατηρήσει ότι η BASIC μπορεί να διαβαστεί όπως τα αγγλικά; </font><font style="vertical-align: inherit;">συνήθως μπορείτε να μάθετε τι κάνει ένα πρόγραμμα διαβάζοντάς το. </font><font style="vertical-align: inherit;">Αυτή η ικανότητα θα γίνει πιο σημαντική καθώς η αναζήτησή σας συνεχίζει να γίνετε προγραμματιστής παιχνιδιών υπολογιστή.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Η δήλωση IF μπορεί να συνοψιστεί ως εξής:</font></font></p>
+            <pre><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ΑΝ κάτι είναι αλήθεια ΤΟΤΕ κάνε κάτι για αυτό</font></font></pre>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Εντάξει, ας το αναλύσουμε. </font><font style="vertical-align: inherit;">Τι εννοούμε με το «κάτι είναι αλήθεια». </font><font style="vertical-align: inherit;">Λοιπόν, στα αγγλικά θα μπορούσα να πω κάτι σαν αυτό:</font></font></p>
+            <pre><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ΑΝ αισθάνομαι πεινασμένος ΤΟΤΕ τρώω ένα μπισκότο</font></font></pre>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Σύμφωνα με αυτή τη δήλωση, θα έτρωγα το μπισκότο μόνο αν πεινάω. </font><font style="vertical-align: inherit;">Λοιπόν, στην πραγματική ζωή θα έτρωγα το μπισκότο ούτως ή άλλως, αλλά μην ανησυχείτε για αυτό. </font><font style="vertical-align: inherit;">Μόνο μπερδεύει το θέμα.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Λοιπόν, πώς μεταφράζεται αυτό σε υπολογιστή; </font><font style="vertical-align: inherit;">Τι λες για αυτό:</font></font></p>
+            <div>
+               <div id="highlighter_367136" class="syntaxhighlighter  plain">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     <tbody>
+                        <tr>
+                           <td class="gutter">
+                              <div class="line number1 index0 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></div>
+                              <div class="line number2 index1 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></div>
+                           </td>
+                           <td class="code">
+                              <div class="container">
+                                 <div class="line number1 index0 alt2"><code class="plain plain">10 LET A = 123</code></div>
+                                 <div class="line number2 index1 alt1"><code class="plain plain">20 IF A = 124 THEN PRINT "A is equal to 124"</code></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Αυτό το πρόγραμμα στην πραγματικότητα δεν βγάζει τίποτα, καθώς η πρόταση PRINT εκτελείται μόνο ΑΝ το A είναι ίσο με 124. Στην πραγματικότητα του δώσαμε την τιμή 123 στη γραμμή 10. Εάν θέλετε να το αποδείξετε αυτό, επεξεργαστείτε τη γραμμή 10 για να αλλάξετε την τιμή από το Α έως το 124 και μετά εκτελέστε το ξανά…</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Μπορείτε να κάνετε οποιαδήποτε σύγκριση, με την προϋπόθεση ότι η απάντηση είναι είτε ΝΑΙ (Σωστό) είτε ΟΧΙ (Λάθος). </font><font style="vertical-align: inherit;">Ο υπολογιστής θα εκτελέσει τότε την εντολή μόνο εάν η απάντηση είναι ΝΑΙ.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ακολουθούν μερικά παραδείγματα συγκρίσεων:</font></font></p>
+            <pre><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">&gt; Μεγαλύτερο από (δηλ. ΑΝ A &gt; 1)</font></font><font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+&lt; Λιγότερο από (δηλ. ΑΝ A &lt; 100)</font></font><font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+= Ίσο με (δηλ. ΑΝ A = 123)</font></font><font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+&lt;&gt; Δεν ισούται με (δηλ. ΑΝ A &lt;&gt; 0)</font></font><font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+&gt;= Μεγαλύτερο ή ίσο με (δηλαδή ΑΝ A &gt;= 10)</font></font><font></font><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">
+&lt;= Λιγότερο από ή ίσο με (δηλ. ΑΝ A &lt;= 10000)</font></font></pre>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Σημειώστε ότι μπορείτε επίσης να συγκρίνετε συμβολοσειρές, ώστε να μπορείτε να ελέγξετε ΑΝ A$ = "ΝΑΙ". </font><font style="vertical-align: inherit;">Ωστόσο, οι συμβολοσειρές και οι αριθμοί αντιμετωπίζονται διαφορετικά και δεν μπορείτε να συγκρίνετε τα μήλα με τα πορτοκάλια. </font><font style="vertical-align: inherit;">Περισσότερα για αυτό αργότερα…</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">ΕΝΤΑΞΕΙ. </font><font style="vertical-align: inherit;">Έχουμε μεταβλητές και αποφάσεις, τώρα θα εργαστούμε για το </font></font><a title="Μέρος 4: Βρόχοι" href="https://www-breakintoprogram-co-uk.translate.goog/programming/basic/part-4?_x_tr_sl=auto&amp;_x_tr_tl=el&amp;_x_tr_hl=el&amp;_x_tr_pto=wapp&amp;_x_tr_sch=http"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">looping</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;"> και νομίζω ότι έχουμε σπασμένα τα βασικά…</font></font></p>
+         </div>
+         <!-- .entry-content --> 
+      </article>
+      <article id="post-103" class="content-page post-103 page type-page status-publish hentry">
+         <header class="page-header">
+            <h1 class="page-title entry-title" itemprop="headline name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Μέρος 4: Βρόχοι</font></font></h1>
+         </header>
+         <!-- .page-header --> 
+         <div class="entry-content clearfix">
+            
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Έθιξα εν συντομία τους βρόχους στο μέρος 1 με το παράδειγμα κώδικα. </font><font style="vertical-align: inherit;">θα έκανε βρόχο για πάντα (ή μέχρι να πατήσετε BREAK) εκτυπώνοντας "Hello!" </font><font style="vertical-align: inherit;">στην οθόνη.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Εάν το συνδυάσετε με την εντολή IF και τις μεταβλητές, μπορείτε να ελέγξετε τον βρόχο. </font><font style="vertical-align: inherit;">Πάρτε αυτό το παράδειγμα:</font></font></p>
+            <div>
+               <div id="highlighter_534986" class="syntaxhighlighter  plain">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     <tbody>
+                        <tr>
+                           <td class="gutter">
+                              <div class="line number1 index0 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></div>
+                              <div class="line number2 index1 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></div>
+                              <div class="line number3 index2 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></div>
+                              <div class="line number4 index3 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></div>
+                           </td>
+                           <td class="code">
+                              <div class="container">
+                                 <div class="line number1 index0 alt2"><code class="plain plain">10 LET I = 1</code></div>
+                                 <div class="line number2 index1 alt1"><code class="plain plain">20 PRINT "The value of I = "; I</code></div>
+                                 <div class="line number3 index2 alt2"><code class="plain plain">30 LET I = I + 1</code></div>
+                                 <div class="line number4 index3 alt1"><code class="plain plain">40 IF I &lt;= 10 THEN GOTO 20</code></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Αυτό το παράδειγμα εκτυπώνει και αυξάνει την τιμή της μεταβλητής I, γυρίζοντας γύρω ενώ το I είναι μικρότερο ή ίσο με 10. Ενώ ουσιαστικά έτσι θα το κάνατε στη γλώσσα συναρμολόγησης, υπάρχει μια πιο κομψή κατασκευή για αυτόν τον τύπο βρόχου στη BASIC. </font><font style="vertical-align: inherit;">ο βρόχος ΓΙΑ…ΕΠΟΜΕΝΟ.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Αυτό είναι το ίδιο παράδειγμα, γραμμένο χρησιμοποιώντας τον βρόχο FOR…NEXT:</font></font></p>
+            <div>
+               <div id="highlighter_463549" class="syntaxhighlighter  plain">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     <tbody>
+                        <tr>
+                           <td class="gutter">
+                              <div class="line number1 index0 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></div>
+                              <div class="line number2 index1 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></div>
+                              <div class="line number3 index2 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></div>
+                           </td>
+                           <td class="code">
+                              <div class="container">
+                                 <div class="line number1 index0 alt2"><code class="plain plain">10 FOR I = 1 TO 10</code></div>
+                                 <div class="line number2 index1 alt1"><code class="plain plain">20 PRINT "The value of I = "; I</code></div>
+                                 <div class="line number3 index2 alt2"><code class="plain plain">30 NEXT I</code></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Μπορείτε να δείτε ότι αυτό είναι πολύ πιο εύκολο να το διαβάσετε. </font><font style="vertical-align: inherit;">Μπορείτε επίσης να κάνετε βρόχο προς τα πίσω ή με διαφορετική αύξηση προσθέτοντας την εντολή STEP:</font></font></p>
+            <div>
+               <div id="highlighter_582343" class="syntaxhighlighter  plain">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     <tbody>
+                        <tr>
+                           <td class="gutter">
+                              <div class="line number1 index0 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></div>
+                              <div class="line number2 index1 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></div>
+                              <div class="line number3 index2 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></div>
+                           </td>
+                           <td class="code">
+                              <div class="container">
+                                 <div class="line number1 index0 alt2"><code class="plain plain">10 FOR I = 100 TO 50 STEP -3</code></div>
+                                 <div class="line number2 index1 alt1"><code class="plain plain">20 PRINT "The value of I = "; I</code></div>
+                                 <div class="line number3 index2 alt2"><code class="plain plain">30 NEXT I</code></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Αυτό θα κάνει βρόχο προς τα πίσω από το 100 στο 50, μειώνοντας σε προσαυξήσεις των 3. Μπορείτε να δείτε ότι η τιμή της εντολής STEP είναι το ποσό που πρέπει να ληφθεί από το I. Σημειώστε ότι σε αυτό το παράδειγμα θα εμφανίζει μόνο τιμές του I μεταξύ 100 και 52; </font><font style="vertical-align: inherit;">η επόμενη αύξηση θα το πάρει κάτω από την τιμή του δεύτερου βρόχου 50.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Μπορείτε επίσης να τοποθετήσετε βρόχους, δηλαδή να εκτελείτε έναν βρόχο μέσα σε έναν άλλο. </font><font style="vertical-align: inherit;">Πάρτε αυτό το παράδειγμα:</font></font></p>
+            <div>
+               <div id="highlighter_896505" class="syntaxhighlighter  plain">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     <tbody>
+                        <tr>
+                           <td class="gutter">
+                              <div class="line number1 index0 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></div>
+                              <div class="line number2 index1 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></div>
+                              <div class="line number3 index2 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></div>
+                              <div class="line number4 index3 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></div>
+                              <div class="line number5 index4 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></div>
+                           </td>
+                           <td class="code">
+                              <div class="container">
+                                 <div class="line number1 index0 alt2"><code class="plain plain">10 FOR X = 0 TO 31</code></div>
+                                 <div class="line number2 index1 alt1"><code class="plain plain">20 FOR Y = 0 TO 21</code></div>
+                                 <div class="line number3 index2 alt2"><code class="plain plain">30 PLOT X*8,Y*8</code></div>
+                                 <div class="line number4 index3 alt1"><code class="plain plain">40 NEXT Y</code></div>
+                                 <div class="line number5 index4 alt2"><code class="plain plain">50 NEXT X</code></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Σε αυτό το παράδειγμα, υπάρχει ένας εξωτερικός βρόχος (γραμμές 10 και 50) που περιέχει έναν εσωτερικό βρόχο (γραμμές 20 έως 40). </font><font style="vertical-align: inherit;">Ο εσωτερικός βρόχος (Y) θα εκτελεστεί 32 φορές, για κάθε τιμή του εξωτερικού βρόχου (X) μεταξύ 0 και 31. Αυτό το παράδειγμα σχεδιάζει ένα πλέγμα κουκκίδων στην οθόνη.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Σημείωση, πρέπει να λάβετε τη σειρά των ΕΠΟΜΕΝΩΝ οδηγιών με τη σωστή σειρά. </font><font style="vertical-align: inherit;">ο εσωτερικός βρόχος πρέπει να περικλείεται πλήρως από τον εξωτερικό βρόχο. </font><font style="vertical-align: inherit;">Μπορείτε επίσης να έχετε περισσότερα από δύο επίπεδα ένθετου βρόχου.</font></font></p>
+            <p>Our programs may be getting fairly complicated at this point, so we’ll look at how we can organise similar pieces of code into <a href="https://www-breakintoprogram-co-uk.translate.goog/programming/basic/part-5?_x_tr_sl=auto&amp;_x_tr_tl=el&amp;_x_tr_hl=el&amp;_x_tr_pto=wapp&amp;_x_tr_sch=http">subroutines</a> next.</p>
+         </div>
+         <!-- .entry-content --> 
+      </article>
+      <article id="post-268" class="content-page post-268 page type-page status-publish hentry">
+         <header class="page-header">
+            <h1 class="page-title entry-title" itemprop="headline name"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Μέρος 5: Υπορουτίνες</font></font></h1>
+         </header>
+         <!-- .page-header --> 
+         <div class="entry-content clearfix">
+            <link itemprop="mainEntityOfPage" href="https://www-breakintoprogram-co-uk.translate.goog/programming/basic/part-5?_x_tr_sl=auto&amp;_x_tr_tl=el&amp;_x_tr_hl=el&amp;_x_tr_pto=wapp&amp;_x_tr_sch=http">
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Οι υπορουτίνες είναι ένας τρόπος για να έχετε ένα κομμάτι κώδικα που μπορεί να «κληθεί» περισσότερες από μία φορές μέσα στο πρόγραμμά σας. </font><font style="vertical-align: inherit;">Συνήθως το χρησιμοποιείτε εάν έχετε ένα μπλοκ μερικών γραμμών κώδικα που επαναλαμβάνεται περισσότερες από μία φορές στην καταχώρισή σας. </font><font style="vertical-align: inherit;">Χρησιμοποιούμε τις εντολές GO SUB (GO to SUBroutine) και RETURN (RETURN from subroutine).</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Πάρτε για παράδειγμα τον παρακάτω κώδικα:</font></font></p>
+            <div>
+               <div id="highlighter_498427" class="syntaxhighlighter  plain">
+                  <table border="0" cellpadding="0" cellspacing="0">
+                     <tbody>
+                        <tr>
+                           <td class="gutter">
+                              <div class="line number1 index0 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1</font></font></div>
+                              <div class="line number2 index1 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2</font></font></div>
+                              <div class="line number3 index2 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">3</font></font></div>
+                              <div class="line number4 index3 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">4</font></font></div>
+                              <div class="line number5 index4 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">5</font></font></div>
+                              <div class="line number6 index5 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">6</font></font></div>
+                              <div class="line number7 index6 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">7</font></font></div>
+                              <div class="line number8 index7 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">8</font></font></div>
+                              <div class="line number9 index8 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">9</font></font></div>
+                              <div class="line number10 index9 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">10</font></font></div>
+                              <div class="line number11 index10 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">11</font></font></div>
+                              <div class="line number12 index11 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">12</font></font></div>
+                              <div class="line number13 index12 alt2"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">13</font></font></div>
+                              <div class="line number14 index13 alt1"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">14</font></font></div>
+                           </td>
+                           <td class="code">
+                              <div class="container">
+                                 <div class="line number1 index0 alt2"><code class="plain plain">10 LET A = 5</code></div>
+                                 <div class="line number2 index1 alt1"><code class="plain plain">20 LET B = 6</code></div>
+                                 <div class="line number3 index2 alt2"><code class="plain plain">30 LET C = 100</code></div>
+                                 <div class="line number4 index3 alt1"><code class="plain plain">40 GO SUB 9000</code></div>
+                                 <div class="line number5 index4 alt2"><code class="plain plain">50 LET A = 100</code></div>
+                                 <div class="line number6 index5 alt1"><code class="plain plain">60 LET B = 200</code></div>
+                                 <div class="line number7 index6 alt2"><code class="plain plain">70 LET C = 300</code></div>
+                                 <div class="line number8 index7 alt1"><code class="plain plain">80 GO SUB 9000</code></div>
+                                 <div class="line number9 index8 alt2"><code class="plain plain">8998 STOP</code></div>
+                                 <div class="line number10 index9 alt1"><code class="plain plain">8999 REM START OF SUBROUTINE AREA</code></div>
+                                 <div class="line number11 index10 alt2"><code class="plain plain">9000 REM Subroutine to calculate the average of A, B and C</code></div>
+                                 <div class="line number12 index11 alt1"><code class="plain plain">9010 LET R = (A+B+C)/3</code></div>
+                                 <div class="line number13 index12 alt2"><code class="plain plain">9020 PRINT "The average of "; A; ","; B; " and "; C; " is "; R</code></div>
+                                 <div class="line number14 index13 alt1"><code class="plain plain">9030 RETURN</code></div>
+                              </div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </div>
+            </div>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ο κωδικός στις γραμμές 9000-9030 είναι η υπορουτίνα. </font><font style="vertical-align: inherit;">Αυτή η υπορουτίνα υπολογίζει τον μέσο όρο των Α, Β και Γ και εκτυπώνει τα αποτελέσματα. </font><font style="vertical-align: inherit;">Ο κωδικός από το 10 έως το 40 ορίζει αυτές τις μεταβλητές και καλεί την υπορουτίνα. </font><font style="vertical-align: inherit;">αυτό υπολογίζει και βγάζει το αποτέλεσμα. </font><font style="vertical-align: inherit;">Στη συνέχεια, η γραμμή 120 θα επιστρέψει την εκτέλεση του προγράμματος πίσω στη γραμμή αμέσως μετά το GO SUB, σε αυτήν την περίπτωση, τη γραμμή 50.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Αυτό στη συνέχεια επαναλαμβάνεται ξανά (γραμμές 50 έως 80) με διαφορετικές τιμές για τα A, B και C. Σημειώστε την εντολή STOP στη γραμμή 8998. </font><font style="vertical-align: inherit;">αυτό είναι σημαντικό. </font><font style="vertical-align: inherit;">Εάν η εντολή STOP παραλειφθεί τότε ο κωδικός θα τρέχει στις υπορουτίνες.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Μπορείτε να δείτε ότι το GO SUB μοιάζει πολύ με το GO TO. </font><font style="vertical-align: inherit;">Η μόνη διαφορά είναι ότι το GO SUB ωθεί τον αριθμό γραμμής στη στοίβα πριν ξεκινήσει να εκτελεί την υπορουτίνα. </font><font style="vertical-align: inherit;">η εντολή RETURN επαναφέρει αυτήν την εντολή από τη στοίβα και συνεχίζει την εκτέλεση από αυτό το σημείο.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Ήταν κοινή πρακτική να δίνουμε σε όλες τις υπορουτίνες αριθμούς υψηλής γραμμής (παλαιότερα ξεκινούσα από το 9000). </font><font style="vertical-align: inherit;">Αν χρειαζόταν να προσθέσω μια δεύτερη υπορουτίνα σε αυτό το πρόγραμμα, πιθανότατα θα την ξεκινούσα από τη γραμμή 9100, σε περίπτωση που χρειαζόταν να προσθέσω οποιεσδήποτε γραμμές στην υπορουτίνα πάνω από αυτήν. </font><font style="vertical-align: inherit;">Μπορεί να είναι πολύ δύσκολο να επαναριθμήσετε όλα τα GO SUB σας, γι' αυτό είναι καλό να σκεφτείτε αυτό κατά τη σύνταξη του προγράμματος.</font></font></p>
+            <p><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Μια υπορουτίνα μπορεί να καλέσει άλλες υπορουτίνες, ή μάλιστα τον εαυτό της (μια τεχνική που ονομάζεται αναδρομή).</font></font></p>
+         </div>
+         <!-- .entry-content --> 
+      </article>
+   </body>
+</html>
